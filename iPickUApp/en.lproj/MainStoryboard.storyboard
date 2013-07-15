@@ -22,7 +22,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F4g-xw-SWY" kind="push" id="CL4-Fo-HkW"/>
+                                    <segue destination="F4g-xw-SWY" kind="modal" id="CL4-Fo-HkW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-e2-NwI">
@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PnW-rZ-iAG" kind="push" id="Bql-Ph-KUF"/>
+                                    <segue destination="PnW-rZ-iAG" kind="modal" modalTransitionStyle="flipHorizontal" id="Bql-Ph-KUF"/>
                                 </connections>
                             </button>
                         </subviews>
