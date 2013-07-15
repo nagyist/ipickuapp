@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+// Parse Framework
+#import <Parse/Parse.h>
+
 @interface ViewController ()
 
 @end
@@ -16,8 +19,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [super viewDidLoad];	
 }
 
 - (void)didReceiveMemoryWarning

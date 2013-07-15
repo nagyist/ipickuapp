@@ -8,11 +8,20 @@
 
 #import "AppDelegate.h"
 
+// Parse Framework
+#import <Parse/Parse.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // Init Parse Framework
+    [Parse setApplicationId:@"XEZRLhiMugNav5P8jxiQPDUuRl9RSKJGMRcZ5a1m"
+                  clientKey:@"mE9ryF5oG7QOdpFBW0Os7MGCbdycrKAHdDOkDZ3O"];
+    
+    // Init Parse Analytics
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 							
@@ -42,5 +51,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end
