@@ -11,6 +11,10 @@
 // Parse Framework
 #import <Parse/Parse.h>
 
+
+#import "Passenger.h"
+#import "Driver.h"
+
 @interface ViewController ()
 
 @end
@@ -19,6 +23,13 @@
 
 - (void)viewDidLoad
 {
+    Driver *customer = [Driver object];
+    customer.source = @"source";
+    customer.destination = @"destination";
+    customer.seats = [NSNumber numberWithInt:4];
+    customer.status = DRIVER_STATUS_NEW;
+    [customer saveInBackground];
+    
     [super viewDidLoad];	
 }
 

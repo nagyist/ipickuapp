@@ -28,6 +28,8 @@
 		DD8B61461793CD9E009591D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61451793CD9E009591D6 /* Security.framework */; };
 		DD8B61481793CDA4009591D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61471793CDA4009591D6 /* StoreKit.framework */; };
 		DD8B614A1793CDAB009591D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61491793CDAB009591D6 /* SystemConfiguration.framework */; };
+		DD8B614D1793D346009591D6 /* Passenger.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B614C1793D346009591D6 /* Passenger.m */; };
+		DD8B61501793D57C009591D6 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B614F1793D57C009591D6 /* Driver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,10 @@
 		DD8B61451793CD9E009591D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DD8B61471793CDA4009591D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DD8B61491793CDAB009591D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DD8B614B1793D346009591D6 /* Passenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passenger.h; sourceTree = "<group>"; };
+		DD8B614C1793D346009591D6 /* Passenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Passenger.m; sourceTree = "<group>"; };
+		DD8B614E1793D57C009591D6 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Driver.h; sourceTree = "<group>"; };
+		DD8B614F1793D57C009591D6 /* Driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Driver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,10 @@
 				DD8B612F1793CC79009591D6 /* ViewController.h */,
 				DD8B61301793CC79009591D6 /* ViewController.m */,
 				DD8B611B1793CC79009591D6 /* Supporting Files */,
+				DD8B614B1793D346009591D6 /* Passenger.h */,
+				DD8B614C1793D346009591D6 /* Passenger.m */,
+				DD8B614E1793D57C009591D6 /* Driver.h */,
+				DD8B614F1793D57C009591D6 /* Driver.m */,
 			);
 			path = iPickUApp;
 			sourceTree = "<group>";
@@ -216,6 +226,8 @@
 				DD8B61211793CC79009591D6 /* main.m in Sources */,
 				DD8B61251793CC79009591D6 /* AppDelegate.m in Sources */,
 				DD8B61311793CC79009591D6 /* ViewController.m in Sources */,
+				DD8B614D1793D346009591D6 /* Passenger.m in Sources */,
+				DD8B61501793D57C009591D6 /* Driver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

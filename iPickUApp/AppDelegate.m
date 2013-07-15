@@ -11,10 +11,20 @@
 // Parse Framework
 #import <Parse/Parse.h>
 
+
+// Parse subclasses
+#import "Passenger.h"
+#import "Driver.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // Load parse cusotm subclasses
+    [Passenger registerSubclass];
+    [Driver registerSubclass];
+    
     // Init Parse Framework
     [Parse setApplicationId:@"XEZRLhiMugNav5P8jxiQPDUuRl9RSKJGMRcZ5a1m"
                   clientKey:@"mE9ryF5oG7QOdpFBW0Os7MGCbdycrKAHdDOkDZ3O"];
