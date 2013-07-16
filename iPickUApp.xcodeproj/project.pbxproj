@@ -30,6 +30,9 @@
 		DD8B614A1793CDAB009591D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61491793CDAB009591D6 /* SystemConfiguration.framework */; };
 		DD8B614D1793D346009591D6 /* Passenger.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B614C1793D346009591D6 /* Passenger.m */; };
 		DD8B61501793D57C009591D6 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B614F1793D57C009591D6 /* Driver.m */; };
+		DD8B615317952C29009591D6 /* PassengerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615217952C29009591D6 /* PassengerViewController.m */; };
+		DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615617952CEC009591D6 /* DriverViewController.m */; };
+		DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* LocationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,13 @@
 		DD8B614C1793D346009591D6 /* Passenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Passenger.m; sourceTree = "<group>"; };
 		DD8B614E1793D57C009591D6 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Driver.h; sourceTree = "<group>"; };
 		DD8B614F1793D57C009591D6 /* Driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Driver.m; sourceTree = "<group>"; };
+		DD8B615117952C29009591D6 /* PassengerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerViewController.h; sourceTree = "<group>"; };
+		DD8B615217952C29009591D6 /* PassengerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerViewController.m; sourceTree = "<group>"; };
+		DD8B615517952CEC009591D6 /* DriverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverViewController.h; sourceTree = "<group>"; };
+		DD8B615617952CEC009591D6 /* DriverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverViewController.m; sourceTree = "<group>"; };
+		DD8B61581795CBA6009591D6 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		DD8B61591795CBA6009591D6 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		DD8B615C1795CC0B009591D6 /* LocationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,16 +139,20 @@
 		DD8B611A1793CC79009591D6 /* iPickUApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD8B615B1795CBE8009591D6 /* Protocols */,
 				DD8B61231793CC79009591D6 /* AppDelegate.h */,
 				DD8B61241793CC79009591D6 /* AppDelegate.m */,
 				DD8B612C1793CC79009591D6 /* MainStoryboard.storyboard */,
 				DD8B612F1793CC79009591D6 /* ViewController.h */,
 				DD8B61301793CC79009591D6 /* ViewController.m */,
 				DD8B611B1793CC79009591D6 /* Supporting Files */,
-				DD8B614B1793D346009591D6 /* Passenger.h */,
-				DD8B614C1793D346009591D6 /* Passenger.m */,
-				DD8B614E1793D57C009591D6 /* Driver.h */,
-				DD8B614F1793D57C009591D6 /* Driver.m */,
+				DD8B615417952C34009591D6 /* Models */,
+				DD8B615117952C29009591D6 /* PassengerViewController.h */,
+				DD8B615217952C29009591D6 /* PassengerViewController.m */,
+				DD8B615517952CEC009591D6 /* DriverViewController.h */,
+				DD8B615617952CEC009591D6 /* DriverViewController.m */,
+				DD8B61581795CBA6009591D6 /* LocationViewController.h */,
+				DD8B61591795CBA6009591D6 /* LocationViewController.m */,
 			);
 			path = iPickUApp;
 			sourceTree = "<group>";
@@ -155,6 +169,25 @@
 				DD8B612A1793CC79009591D6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD8B615417952C34009591D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD8B614B1793D346009591D6 /* Passenger.h */,
+				DD8B614C1793D346009591D6 /* Passenger.m */,
+				DD8B614E1793D57C009591D6 /* Driver.h */,
+				DD8B614F1793D57C009591D6 /* Driver.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DD8B615B1795CBE8009591D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DD8B615C1795CC0B009591D6 /* LocationProtocol.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +261,9 @@
 				DD8B61311793CC79009591D6 /* ViewController.m in Sources */,
 				DD8B614D1793D346009591D6 /* Passenger.m in Sources */,
 				DD8B61501793D57C009591D6 /* Driver.m in Sources */,
+				DD8B615317952C29009591D6 /* PassengerViewController.m in Sources */,
+				DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */,
+				DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
