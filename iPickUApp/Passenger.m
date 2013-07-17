@@ -15,6 +15,7 @@
 @dynamic source;
 @dynamic destination;
 @dynamic available;
+@dynamic isTripOver;
 
 + (NSString *)parseClassName {
     return @"Passenger";

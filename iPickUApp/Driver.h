@@ -8,15 +8,10 @@
 
 #import "Passenger.h"
 
-#define DRIVER_STATUS_NEW @"NEW"
-#define DRIVER_STATUS_OVER @"OVER"
-
 @interface Driver : Passenger
 
-@property (strong, atomic) NSString *status; // NEW - OVER
 @property (strong, atomic) NSNumber *seats;
 
 + (NSString *)parseClassName;
-
 
 @end

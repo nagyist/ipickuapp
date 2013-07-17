@@ -10,8 +10,6 @@
 
 @implementation Driver
 
-
-@dynamic status;
 @dynamic seats;
 
 + (NSString *)parseClassName {

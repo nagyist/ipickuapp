@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bYD-TJ-pkR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cbk-wZ-A4E" kind="modal" modalTransitionStyle="flipHorizontal" id="CL4-Fo-HkW"/>
+                                    <segue destination="F4g-xw-SWY" kind="push" id="IQN-Kk-c5H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-e2-NwI">
@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nd6-2i-sdj" kind="modal" modalTransitionStyle="flipHorizontal" id="Bql-Ph-KUF"/>
+                                    <segue destination="PnW-rZ-iAG" kind="push" id="LJT-27-v7S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,17 +47,19 @@
                             <constraint firstItem="MOW-e2-NwI" firstAttribute="centerX" secondItem="NwH-V6-IdH" secondAttribute="centerX" type="default" id="uq8-Mw-mqz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0vO-nd-XBU"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91" y="287"/>
+            <point key="canvasLocation" x="435" y="287"/>
         </scene>
         <!--Driver View Controller - New driver-->
         <scene sceneID="qz3-oy-DCQ">
             <objects>
                 <viewController id="F4g-xw-SWY" customClass="DriverViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbj-Rd-VKY">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jaF-KP-kbA">
@@ -178,18 +180,19 @@
                         <outlet property="pickUpLocationLabel" destination="yNP-6T-mlV" id="mdR-At-eXW"/>
                         <outlet property="selectDropOffLocationButton" destination="YL2-v6-EeM" id="wb5-C9-auK"/>
                         <outlet property="submitButton" destination="Zx8-kN-WOC" id="cDJ-9y-jRF"/>
+                        <segue destination="6oz-zP-OLk" kind="modal" identifier="SUBMIT_REQUEST" id="dJc-Om-svF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lh-3W-VfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="-136"/>
+            <point key="canvasLocation" x="1038" y="-108"/>
         </scene>
         <!--Location View Controller - Pick Up Location-->
         <scene sceneID="YlY-mm-JKW">
             <objects>
                 <tableViewController title="Pick Up Location" id="yUv-0n-lVT" customClass="LocationViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="P1c-r9-rEu">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -311,14 +314,28 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTS-VD-eLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="-136"/>
+            <point key="canvasLocation" x="1744" y="-108"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wLL-pr-X2b">
+            <objects>
+                <viewController id="6oz-zP-OLk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gec-DJ-mC8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7G-Q0-zOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744" y="-822"/>
         </scene>
         <!--Passenger View Controller - New passenger-->
         <scene sceneID="RG8-WI-0dX">
             <objects>
                 <viewController id="PnW-rZ-iAG" customClass="PassengerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TzQ-QR-hyQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVB-lL-FHc">
@@ -415,12 +432,12 @@
                         <outlet property="pickUpLocationLabel" destination="Rbc-zh-0JE" id="hgB-0q-hPn"/>
                         <outlet property="selectDropOffLocationButton" destination="gql-rH-sQq" id="uSv-J8-rqn"/>
                         <outlet property="submitButton" destination="Han-Re-a21" id="kgB-tz-hAH"/>
-                        <segue destination="fUg-RD-Mc3" kind="modal" identifier="SUBMIT_REQUEST" id="rnl-XV-4A6"/>
+                        <segue destination="fUg-RD-Mc3" kind="push" identifier="SUBMIT_REQUEST" id="rnl-XV-4A6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qy4-FN-BuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="555"/>
+            <point key="canvasLocation" x="1038" y="563"/>
         </scene>
         <!--Passenger Trip View Controller-->
         <scene sceneID="4kW-Wo-gDD">
@@ -452,6 +469,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onEditClick:" destination="fUg-RD-Mc3" eventType="touchUpInside" id="2v0-KI-wXc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nk-Xs-Jey">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -462,6 +482,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onDeleteClick:" destination="fUg-RD-Mc3" eventType="touchUpInside" id="XTq-4Y-eut"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="car count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-yF-7d4">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -519,6 +542,7 @@
                             <constraint firstItem="1Nk-Xs-Jey" firstAttribute="centerX" secondItem="ea9-a3-sen" secondAttribute="centerX" type="default" id="z7C-5w-oEE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="I0V-Fs-2PX"/>
                     <connections>
                         <outlet property="carCountLabel" destination="gpp-vW-KGx" id="heU-De-S8y"/>
                         <outlet property="seatCountLabel" destination="2Gd-8i-gI5" id="wIi-iZ-SBg"/>
@@ -526,14 +550,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-wl-6lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="1271"/>
+            <point key="canvasLocation" x="1744" y="1255"/>
         </scene>
         <!--Location View Controller - Drop Off Location-->
         <scene sceneID="aWj-q4-vwE">
             <objects>
                 <tableViewController title="Drop Off Location" id="MHi-GH-dYJ" customClass="LocationViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Tg7-2a-dbR">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -597,43 +621,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZlT-Di-yjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="555"/>
+            <point key="canvasLocation" x="1750" y="563"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Qht-bM-0v8">
+        <scene sceneID="buy-cF-g80">
             <objects>
-                <navigationController id="cbk-wZ-A4E" sceneMemberID="viewController">
+                <navigationController id="bYD-TJ-pkR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Ij-6i-Zcm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BDg-Ra-fVR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="F4g-xw-SWY" kind="relationship" relationship="rootViewController" id="i5S-CS-6E1"/>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="xhl-s7-79k"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GQ3-xG-cee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdz-yn-aTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="-136"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oD0-ux-cjY">
-            <objects>
-                <navigationController id="nd6-2i-sdj" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o94-xY-Vw7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="PnW-rZ-iAG" kind="relationship" relationship="rootViewController" id="7yc-v6-rcZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M9B-da-ebr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="636" y="555"/>
+            <point key="canvasLocation" x="-91" y="287"/>
         </scene>
     </scenes>
     <classes>
@@ -653,6 +659,8 @@
         <class className="PassengerTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerTripViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onDeleteClick:"/>
+                <relationship kind="action" name="onEditClick:"/>
                 <relationship kind="action" name="onPickUpClick:"/>
                 <relationship kind="outlet" name="carCountLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="seatCountLabel" candidateClass="UILabel"/>
@@ -679,7 +687,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fXa-WI-Os5"/>
-        <segue reference="to9-Jf-qTO"/>
+        <segue reference="iO6-hG-NLy"/>
+        <segue reference="SdB-0j-8N2"/>
     </inferredMetricsTieBreakers>
 </document>

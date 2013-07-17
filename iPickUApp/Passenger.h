@@ -13,6 +13,8 @@
 @property (strong, nonatomic) NSString *source;
 @property (strong, nonatomic) NSString *destination;
 @property (nonatomic) BOOL available;
+@property (nonatomic) BOOL isTripOver;
+
 
 + (NSString *)parseClassName;
 
