@@ -10,8 +10,4 @@
 
 @interface DriverViewController : PassengerViewController
 
-- (void)clear;
-- (BOOL)submit;
-- (BOOL)isReadyToSubmit;
-
 @end

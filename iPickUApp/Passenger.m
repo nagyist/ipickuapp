@@ -14,6 +14,7 @@
 
 @dynamic source;
 @dynamic destination;
+@dynamic available;
 
 + (NSString *)parseClassName {
     return @"Passenger";

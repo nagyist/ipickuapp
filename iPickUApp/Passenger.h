@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *source;
 @property (strong, nonatomic) NSString *destination;
+@property (nonatomic) BOOL available;
 
 + (NSString *)parseClassName;
 

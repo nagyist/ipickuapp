@@ -24,11 +24,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *selectDropOffLocationButton;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
+@property (strong, nonatomic) Passenger *passenger;
 
 @property (nonatomic) BOOL isPickUp;
 
 - (void)clear;
 - (BOOL)submit;
 - (BOOL)isReadyToSubmit;
+- (void)setSegueDestinationInfo:(UIViewController *)destination;
 
 @end

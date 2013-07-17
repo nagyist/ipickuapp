@@ -13,7 +13,7 @@
 
 @interface Driver : Passenger
 
-@property (strong, atomic) NSString *status; // NEW - ONGOING - OVER
+@property (strong, atomic) NSString *status; // NEW - OVER
 @property (strong, atomic) NSNumber *seats;
 
 + (NSString *)parseClassName;

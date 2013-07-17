@@ -8,6 +8,7 @@
 
 #import "PassengerViewController.h"
 #import "LocationViewController.h"
+#import "PassengerTripViewController.h"
 
 @interface PassengerViewController ()
 
@@ -74,10 +75,11 @@
 }
 
 - (BOOL)submit {
-    Passenger *passenger = [Passenger object];
-    [passenger setSource:[self.pickUpLocationLabel text]];
-    [passenger setDestination:[self.dropOffLocationLabel text]];
-    return [passenger save];
+    self.passenger = [Passenger object];
+    [self.passenger setSource:[self.pickUpLocationLabel text]];
+    [self.passenger setDestination:[self.dropOffLocationLabel text]];
+    [self.passenger setAvailable:YES];
+    return [self.passenger save];
     
 }
 
@@ -92,6 +94,10 @@
     return YES;
 }
 
+- (void)setSegueDestinationInfo:(UIViewController *)destination {
+    PassengerTripViewController *tripViewController = (PassengerTripViewController *)destination;
+    [tripViewController setPassenger:self.passenger];
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSString *segueIdentifier = [segue identifier];
@@ -103,6 +109,8 @@
         self.isPickUp = NO;
         LocationViewController *destination = [segue destinationViewController];
         [destination setDelegate:self];
+    } else if ([segueIdentifier isEqualToString:SUBMIT_REQUEST_SEGUE]) {
+        [self setSegueDestinationInfo:segue.destinationViewController];
     }
 }
 

@@ -23,7 +23,7 @@
     
     // Load parse cusotm subclasses
     [Passenger registerSubclass];
-//    [Driver registerSubclass];
+    [Driver registerSubclass];
     
     // Init Parse Framework
     [Parse setApplicationId:@"XEZRLhiMugNav5P8jxiQPDUuRl9RSKJGMRcZ5a1m"

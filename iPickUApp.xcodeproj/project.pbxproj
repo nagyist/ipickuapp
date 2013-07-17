@@ -33,6 +33,7 @@
 		DD8B615317952C29009591D6 /* PassengerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615217952C29009591D6 /* PassengerViewController.m */; };
 		DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615617952CEC009591D6 /* DriverViewController.m */; };
 		DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* LocationViewController.m */; };
+		DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615E17961050009591D6 /* PassengerTripViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,8 @@
 		DD8B61581795CBA6009591D6 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		DD8B61591795CBA6009591D6 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		DD8B615C1795CC0B009591D6 /* LocationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationProtocol.h; sourceTree = "<group>"; };
+		DD8B615D1796104F009591D6 /* PassengerTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerTripViewController.h; sourceTree = "<group>"; };
+		DD8B615E17961050009591D6 /* PassengerTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTripViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				DD8B615617952CEC009591D6 /* DriverViewController.m */,
 				DD8B61581795CBA6009591D6 /* LocationViewController.h */,
 				DD8B61591795CBA6009591D6 /* LocationViewController.m */,
+				DD8B615D1796104F009591D6 /* PassengerTripViewController.h */,
+				DD8B615E17961050009591D6 /* PassengerTripViewController.m */,
 			);
 			path = iPickUApp;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				DD8B615317952C29009591D6 /* PassengerViewController.m in Sources */,
 				DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */,
 				DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */,
+				DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

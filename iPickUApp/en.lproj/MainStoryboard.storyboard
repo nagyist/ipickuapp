@@ -418,10 +418,10 @@
             </objects>
             <point key="canvasLocation" x="1162" y="555"/>
         </scene>
-        <!--View Controller-->
+        <!--Passenger Trip View Controller-->
         <scene sceneID="4kW-Wo-gDD">
             <objects>
-                <viewController id="fUg-RD-Mc3" sceneMemberID="viewController">
+                <viewController id="fUg-RD-Mc3" customClass="PassengerTripViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ea9-a3-sen">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -435,6 +435,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onPickUpClick:" destination="fUg-RD-Mc3" eventType="touchUpInside" id="jis-8b-7Xc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-8x-smd">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -456,12 +459,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="# car count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-yF-7d4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="car count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-yF-7d4">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="# seats available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKS-1O-E5J">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="seats available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKS-1O-E5J">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -475,29 +478,51 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpp-vW-KGx">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="P2h-8K-ciK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gd-8i-gI5">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Nk-Xs-Jey" firstAttribute="top" secondItem="r8W-8x-smd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ESI-uA-DVL"/>
-                            <constraint firstItem="r8W-8x-smd" firstAttribute="centerX" secondItem="ea9-a3-sen" secondAttribute="centerX" type="default" id="GYh-HU-ZoO"/>
                             <constraint firstItem="8C2-XP-4fu" firstAttribute="trailing" secondItem="r8W-8x-smd" secondAttribute="trailing" type="default" id="IKz-Za-6rt"/>
                             <constraint firstItem="r8W-8x-smd" firstAttribute="leading" secondItem="8C2-XP-4fu" secondAttribute="leading" type="default" id="IaF-4B-J0F"/>
+                            <constraint firstItem="2Gd-8i-gI5" firstAttribute="leading" secondItem="gpp-vW-KGx" secondAttribute="leading" type="default" id="KcN-nJ-Lkh"/>
+                            <constraint firstItem="2Gd-8i-gI5" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="263" id="NLr-35-UUu"/>
                             <constraint firstItem="3Ng-41-Wxw" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="20" symbolic="YES" type="default" id="T1g-P6-LT6"/>
                             <constraint firstItem="ZKS-1O-E5J" firstAttribute="leading" secondItem="ea9-a3-sen" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VSE-nN-ovK"/>
                             <constraint firstItem="8C2-XP-4fu" firstAttribute="centerX" secondItem="3Ng-41-Wxw" secondAttribute="centerX" type="default" id="WlI-0K-q62"/>
+                            <constraint firstItem="gpp-vW-KGx" firstAttribute="baseline" secondItem="kHG-yF-7d4" secondAttribute="baseline" type="default" id="X1A-oC-v6f"/>
                             <constraint firstItem="r8W-8x-smd" firstAttribute="top" secondItem="8C2-XP-4fu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Zlm-zw-35s"/>
                             <constraint firstItem="r8W-8x-smd" firstAttribute="leading" secondItem="1Nk-Xs-Jey" secondAttribute="leading" type="default" id="d4Q-Y0-E7x"/>
                             <constraint firstItem="r8W-8x-smd" firstAttribute="trailing" secondItem="1Nk-Xs-Jey" secondAttribute="trailing" type="default" id="fYF-Bs-HMs"/>
                             <constraint firstItem="kHG-yF-7d4" firstAttribute="leading" secondItem="ea9-a3-sen" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hVi-Hn-JqA"/>
+                            <constraint firstAttribute="trailing" secondItem="gpp-vW-KGx" secondAttribute="trailing" constant="67" id="hg6-Z4-yq6"/>
+                            <constraint firstItem="2Gd-8i-gI5" firstAttribute="trailing" secondItem="gpp-vW-KGx" secondAttribute="trailing" type="default" id="mnN-rj-QZ5"/>
                             <constraint firstItem="8C2-XP-4fu" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="85" id="qex-gJ-DsK"/>
                             <constraint firstItem="kHG-yF-7d4" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="238" id="uqI-8W-M16"/>
                             <constraint firstItem="ZKS-1O-E5J" firstAttribute="top" secondItem="kHG-yF-7d4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xUW-i6-4FI"/>
+                            <constraint firstItem="1Nk-Xs-Jey" firstAttribute="centerX" secondItem="ea9-a3-sen" secondAttribute="centerX" type="default" id="z7C-5w-oEE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carCountLabel" destination="gpp-vW-KGx" id="heU-De-S8y"/>
+                        <outlet property="seatCountLabel" destination="2Gd-8i-gI5" id="wIi-iZ-SBg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-wl-6lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="1273"/>
+            <point key="canvasLocation" x="1820" y="1271"/>
         </scene>
         <!--Location View Controller - Drop Off Location-->
         <scene sceneID="aWj-q4-vwE">
@@ -607,6 +632,42 @@
             <point key="canvasLocation" x="636" y="555"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="DriverViewController" superclassName="PassengerViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LocationViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LocationViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PassengerTripViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerTripViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onPickUpClick:"/>
+                <relationship kind="outlet" name="carCountLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="seatCountLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PassengerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="onClearClick:"/>
+                <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="selectDropOffLocationButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

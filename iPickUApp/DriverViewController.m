@@ -49,5 +49,9 @@
     return false;
 }
 
+- (void)setSegueDestinationInfo:(UIViewController *)destination {
+    
+}
+
 
 @end
