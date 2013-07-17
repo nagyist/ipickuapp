@@ -29,7 +29,7 @@
 @property (nonatomic) BOOL isPickUp;
 
 - (void)clear;
-- (BOOL)submit;
+- (void)submit;
 - (BOOL)isReadyToSubmit;
 - (void)setSegueDestinationInfo:(UIViewController *)destination;
 

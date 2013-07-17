@@ -147,6 +147,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSUbmitClick:" destination="F4g-xw-SWY" eventType="touchUpInside" id="dMm-he-PwG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -386,7 +389,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fUg-RD-Mc3" kind="modal" identifier="SUBMIT_REQUEST" id="Dwx-K8-uk8"/>
+                                    <action selector="onSUbmitClick:" destination="PnW-rZ-iAG" eventType="touchUpInside" id="1Bj-G5-sSF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -412,6 +415,7 @@
                         <outlet property="pickUpLocationLabel" destination="Rbc-zh-0JE" id="hgB-0q-hPn"/>
                         <outlet property="selectDropOffLocationButton" destination="gql-rH-sQq" id="uSv-J8-rqn"/>
                         <outlet property="submitButton" destination="Han-Re-a21" id="kgB-tz-hAH"/>
+                        <segue destination="fUg-RD-Mc3" kind="modal" identifier="SUBMIT_REQUEST" id="rnl-XV-4A6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qy4-FN-BuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -658,6 +662,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="onClearClick:"/>
+                <relationship kind="action" name="onSUbmitClick:"/>
                 <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="selectDropOffLocationButton" candidateClass="UIButton"/>
@@ -674,7 +679,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iO6-hG-NLy"/>
+        <segue reference="fXa-WI-Os5"/>
         <segue reference="to9-Jf-qTO"/>
     </inferredMetricsTieBreakers>
 </document>

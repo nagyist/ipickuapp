@@ -74,24 +74,17 @@
     return YES;    
 }
 
-- (BOOL)submit {
+- (void)submit {
     self.passenger = [Passenger object];
     [self.passenger setSource:[self.pickUpLocationLabel text]];
     [self.passenger setDestination:[self.dropOffLocationLabel text]];
     [self.passenger setAvailable:YES];
-    return [self.passenger save];
-    
-}
-
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([identifier isEqualToString:SUBMIT_REQUEST_SEGUE]) {
-        if ([self submit]) {
-            return YES;
-        } else {
-            return NO;
+    [self.passenger saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            [self performSegueWithIdentifier:SUBMIT_REQUEST_SEGUE sender:self];
         }
-    }
-    return YES;
+    }];
+    
 }
 
 - (void)setSegueDestinationInfo:(UIViewController *)destination {
@@ -118,6 +111,9 @@
     [self clear];
 }
 
+- (IBAction)onSUbmitClick:(id)sender {
+    [self submit];
+}
 
 
 

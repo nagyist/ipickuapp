@@ -37,21 +37,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)clear {
-    
-}
-
-- (BOOL)submit {
-    return false;
-}
-
-- (BOOL)isReadyToSubmit {
-    return false;
-}
-
-- (void)setSegueDestinationInfo:(UIViewController *)destination {
-    
-}
-
 
 @end
