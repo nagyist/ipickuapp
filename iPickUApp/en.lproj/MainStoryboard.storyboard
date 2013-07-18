@@ -314,7 +314,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTS-VD-eLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="-108"/>
+            <point key="canvasLocation" x="1750" y="-108"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wLL-pr-X2b">
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7G-Q0-zOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="-822"/>
+            <point key="canvasLocation" x="1750" y="-822"/>
         </scene>
         <!--Passenger View Controller - New passenger-->
         <scene sceneID="RG8-WI-0dX">
@@ -550,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-wl-6lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744" y="1255"/>
+            <point key="canvasLocation" x="1750" y="1255"/>
         </scene>
         <!--Location View Controller - Drop Off Location-->
         <scene sceneID="aWj-q4-vwE">
@@ -669,7 +669,6 @@
         <class className="PassengerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onClearClick:"/>
                 <relationship kind="action" name="onSUbmitClick:"/>
                 <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
