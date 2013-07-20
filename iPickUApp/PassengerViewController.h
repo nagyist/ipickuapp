@@ -31,6 +31,7 @@
 - (void)clear;
 - (void)submit;
 - (BOOL)isReadyToSubmit;
+- (void)validateUI;
 - (void)setSegueDestinationInfo:(UIViewController *)destination;
 
 @end

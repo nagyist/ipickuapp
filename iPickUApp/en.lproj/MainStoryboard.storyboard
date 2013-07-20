@@ -72,6 +72,9 @@
                                     <segment title="3"/>
                                     <segment title="4"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSeatPickerClick:" destination="F4g-xw-SWY" eventType="valueChanged" id="2gO-c6-sbY"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Spaces available (driver not included)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="153" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-W9-F8j">
                                 <constraints>
@@ -176,8 +179,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="New driver" id="0Xe-31-Bce"/>
                     <connections>
-                        <outlet property="dropOffLocationLabel" destination="4sM-fj-BvJ" id="hQJ-Eq-0tH"/>
-                        <outlet property="pickUpLocationLabel" destination="yNP-6T-mlV" id="mdR-At-eXW"/>
+                        <outlet property="dropOffLocationLabel" destination="4sM-fj-BvJ" id="ddx-hX-uGp"/>
+                        <outlet property="pickUpLocationLabel" destination="yNP-6T-mlV" id="lfc-Q1-3M4"/>
+                        <outlet property="seatPicker" destination="jaF-KP-kbA" id="Cat-L5-7mb"/>
                         <outlet property="selectDropOffLocationButton" destination="YL2-v6-EeM" id="wb5-C9-auK"/>
                         <outlet property="submitButton" destination="Zx8-kN-WOC" id="cDJ-9y-jRF"/>
                         <segue destination="6oz-zP-OLk" kind="modal" identifier="SUBMIT_REQUEST" id="dJc-Om-svF"/>
@@ -646,8 +650,8 @@
         <class className="DriverViewController" superclassName="PassengerViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
+                <relationship kind="action" name="onSeatPickerClick:" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="seatPicker" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="LocationViewController" superclassName="UITableViewController">
@@ -669,7 +673,6 @@
         <class className="PassengerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onSUbmitClick:"/>
                 <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="selectDropOffLocationButton" candidateClass="UIButton"/>
@@ -686,7 +689,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iO6-hG-NLy"/>
-        <segue reference="SdB-0j-8N2"/>
+        <segue reference="fXa-WI-Os5"/>
+        <segue reference="to9-Jf-qTO"/>
     </inferredMetricsTieBreakers>
 </document>

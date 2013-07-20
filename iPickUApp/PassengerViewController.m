@@ -50,11 +50,15 @@
         [self.selectDropOffLocationButton setEnabled:YES];
     } else {
         [self.dropOffLocationLabel setText:location];
-        if ([self isReadyToSubmit]) {
-            [self.submitButton setEnabled:YES];
-        }
+        [self validateUI];
     }
 
+}
+
+- (void)validateUI {
+    if ([self isReadyToSubmit]) {
+        [self.submitButton setEnabled:YES];
+    }
 }
 
 - (BOOL)isReadyToSubmit {
