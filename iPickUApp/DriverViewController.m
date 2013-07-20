@@ -8,6 +8,8 @@
 
 #import "DriverViewController.h"
 
+#import "DriverTripViewController.h"
+
 @interface DriverViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *seatPicker;
 
@@ -69,8 +71,8 @@
 }
 
 - (void)setSegueDestinationInfo:(UIViewController *)destination {
-//    PassengerTripViewController *tripViewController = (PassengerTripViewController *)destination;
-//    [tripViewController setPassenger:self.passenger];
+    DriverTripViewController *tripViewController = (DriverTripViewController *)destination;
+    [tripViewController setDriver:(Driver *)self.passenger];
 }
 
 - (IBAction)onSeatPickerClick:(UISegmentedControl *)sender {

@@ -320,14 +320,73 @@
             </objects>
             <point key="canvasLocation" x="1750" y="-108"/>
         </scene>
-        <!--View Controller-->
+        <!--Driver Trip View Controller-->
         <scene sceneID="wLL-pr-X2b">
             <objects>
-                <viewController id="6oz-zP-OLk" sceneMemberID="viewController">
+                <viewController id="6oz-zP-OLk" customClass="DriverTripViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gec-DJ-mC8">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="People waiting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo5-1i-Vu0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBt-WS-8HG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="QW2-aJ-PY3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxZ-LL-qPi">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Decrease seats">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYO-ax-aD2">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-Q0-1yn">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oYN-Q0-1yn" firstAttribute="leading" secondItem="dYO-ax-aD2" secondAttribute="leading" type="default" id="40H-eH-q52"/>
+                            <constraint firstAttribute="bottom" secondItem="Vo5-1i-Vu0" secondAttribute="bottom" constant="212" id="5Mx-Nq-uiD"/>
+                            <constraint firstItem="dYO-ax-aD2" firstAttribute="trailing" secondItem="oYN-Q0-1yn" secondAttribute="trailing" type="default" id="5d1-5v-DCH"/>
+                            <constraint firstAttribute="trailing" secondItem="uBt-WS-8HG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="A2R-JM-2PJ"/>
+                            <constraint firstItem="oYN-Q0-1yn" firstAttribute="top" secondItem="dYO-ax-aD2" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ESx-05-dYW"/>
+                            <constraint firstItem="uBt-WS-8HG" firstAttribute="baseline" secondItem="Vo5-1i-Vu0" secondAttribute="baseline" type="default" id="JGD-Jo-u1h"/>
+                            <constraint firstItem="oYN-Q0-1yn" firstAttribute="centerX" secondItem="Gec-DJ-mC8" secondAttribute="centerX" type="default" id="Ka0-wY-sRf"/>
+                            <constraint firstItem="NxZ-LL-qPi" firstAttribute="trailing" secondItem="dYO-ax-aD2" secondAttribute="trailing" type="default" id="SET-bp-Aa8"/>
+                            <constraint firstItem="NxZ-LL-qPi" firstAttribute="top" secondItem="Gec-DJ-mC8" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tqX-aO-MLc"/>
+                            <constraint firstItem="dYO-ax-aD2" firstAttribute="top" secondItem="NxZ-LL-qPi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="v4P-3j-svE"/>
+                            <constraint firstItem="Vo5-1i-Vu0" firstAttribute="leading" secondItem="Gec-DJ-mC8" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vCe-Qu-vx6"/>
+                            <constraint firstItem="dYO-ax-aD2" firstAttribute="leading" secondItem="NxZ-LL-qPi" secondAttribute="leading" type="default" id="y3b-NO-XTX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7G-Q0-zOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -646,43 +705,6 @@
             <point key="canvasLocation" x="-91" y="287"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DriverViewController" superclassName="PassengerViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="onSeatPickerClick:" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="seatPicker" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="LocationViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LocationViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="PassengerTripViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerTripViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="onDeleteClick:"/>
-                <relationship kind="action" name="onEditClick:"/>
-                <relationship kind="action" name="onPickUpClick:"/>
-                <relationship kind="outlet" name="carCountLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="seatCountLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="PassengerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="selectDropOffLocationButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
