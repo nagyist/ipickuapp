@@ -8,6 +8,8 @@
 
 #import "PassengerTripViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface PassengerTripViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *carCountLabel;
@@ -30,10 +32,8 @@
 {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
-    
-	[self.carCountLabel setText:[NSString stringWithFormat:@"%d",self.cars]];
-    [self.seatCountLabel setText:[NSString stringWithFormat:@"%d",self.seats]];
-    // Do any additional setup after loading the view.
+    [self fetchDrivers];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,31 +42,43 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)terminateTrip:(BOOL)tripCompleted withReset:(BOOL)reset {
-    [self.passenger setAvailable:NO];
-    [self.passenger setIsTripOver:tripCompleted];
-    [self.passenger saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (reset) {
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        } else {
-            [self.navigationController popViewControllerAnimated:YES];
-        }     
+- (void)fetchDrivers {
+    PFQuery * query = [PFQuery queryWithClassName:@"Driver"];
+    [query whereKey:@"available" equalTo:[NSNumber numberWithBool:true]];
+    [query whereKey:@"source" equalTo:self.passenger.source];
+    [query whereKey:@"destination" equalTo:self.passenger.destination];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            [self.carCountLabel setText:[NSString stringWithFormat:@"%d", [objects count]]];
+            NSInteger seats = 0;
+            for (Driver *driver in objects) {
+                seats += [driver.seats integerValue];
+            }
+            [self.seatCountLabel setText:[NSString stringWithFormat:@"%d", seats]];
+        }
     }];
 }
 
+- (void)terminateTrip:(BOOL)tripCompleted {
+    [self.passenger setAvailable:NO];
+    [self.passenger setIsTripOver:tripCompleted];
+    [self.passenger saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }];
+}
 
 - (IBAction)onPickUpClick:(id)sender {
-    [self terminateTrip:YES withReset:YES];
+    [self terminateTrip:YES];
 }
 
 
 - (IBAction)onDeleteClick:(id)sender {
-    [self terminateTrip:NO withReset:YES];
+    [self terminateTrip:NO];
 }
 
-- (IBAction)onEditClick:(id)sender {
-    [self terminateTrip:NO withReset:YES];
+
+- (IBAction)onRefreshClick:(id)sender {
+    [self fetchDrivers];
 }
 
 

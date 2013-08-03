@@ -8,7 +8,10 @@
 
 #import "DriverTripViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface DriverTripViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *passengerCountLabel;
 
 @end
 
@@ -26,13 +29,49 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self fetchPassengers];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)fetchPassengers {
+    // Loading passenger heading to the same location couple
+    
+    PFQuery * query = [PFQuery queryWithClassName:@"Passenger"];
+    [query whereKey:@"available" equalTo:[NSNumber numberWithBool:true]];
+    [query whereKey:@"source" equalTo:self.driver.source];
+    [query whereKey:@"destination" equalTo:self.driver.destination];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            [self.passengerCountLabel setText:[NSString stringWithFormat:@"%d", [objects count]]];
+        }
+    }];
+}
+
+- (void)terminateTrip:(BOOL)tripCompleted {
+    [self.driver setAvailable:NO];
+    [self.driver setIsTripOver:tripCompleted];
+    [self.driver saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }];
+}
+
+- (IBAction)onDecreaseSeatsClick:(id)sender {
+    NSNumber *seats = self.driver.seats;
+    [self.driver setSeats:[NSNumber numberWithInt:[seats intValue] - 1]];
+    [self.driver saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            // Give feedback to users
+        }
+    }];
+}
+
+- (IBAction)onDeleteClick:(id)sender {
+    [self terminateTrip:NO];
 }
 
 @end

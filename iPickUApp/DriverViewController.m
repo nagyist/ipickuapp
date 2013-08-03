@@ -50,6 +50,7 @@
     [self.passenger setDestination:[self.dropOffLocationLabel text]];
     [self.passenger setAvailable:YES];
     [self.passenger setObject:[NSNumber numberWithInteger:[self.seatPicker selectedSegmentIndex] + 1] forKey:@"seats"];
+    [self.passenger setObject:[NSNumber numberWithInteger:[self.seatPicker selectedSegmentIndex] + 1] forKey:@"seats"];
     [self.passenger saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             [self performSegueWithIdentifier:SUBMIT_REQUEST_SEGUE sender:self];

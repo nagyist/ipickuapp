@@ -79,6 +79,7 @@
 		DD8B615E17961050009591D6 /* PassengerTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTripViewController.m; sourceTree = "<group>"; };
 		DDF22C89179A611100FF376C /* DriverTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverTripViewController.h; sourceTree = "<group>"; };
 		DDF22C8A179A611100FF376C /* DriverTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTripViewController.m; sourceTree = "<group>"; };
+		DDF22C8C179CE73D00FF376C /* TripProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8B615C1795CC0B009591D6 /* LocationProtocol.h */,
+				DDF22C8C179CE73D00FF376C /* TripProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";

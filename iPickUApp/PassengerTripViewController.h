@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "Passenger.h"
+#import "Driver.h"
+#import "TripProtocol.h"
 
-@interface PassengerTripViewController : UIViewController
+@interface PassengerTripViewController : UIViewController<TripProtocol>
 
-@property (nonatomic) NSInteger cars;
-@property (nonatomic) NSInteger seats;
 @property (weak, nonatomic) Passenger *passenger;
 
 

@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "Driver.h"
+#import "TripProtocol.h"
 
-@interface DriverTripViewController : UIViewController
-
-@property (nonatomic) NSInteger passengers;
+@interface DriverTripViewController : UIViewController<TripProtocol>
 
 @property (weak, nonatomic) Driver *driver;
 
