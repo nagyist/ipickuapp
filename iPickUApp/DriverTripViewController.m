@@ -41,10 +41,16 @@
 - (void)fetchPassengers {
     // Loading passenger heading to the same location couple
     
+    NSDateComponents *offset = [[NSDateComponents alloc] init];
+    [offset setHour:-1];
+    NSCalendar *gregorian = [[NSCalendar alloc] init];
+    NSDate *date = [gregorian dateByAddingComponents:offset toDate:[NSDate date] options:0];
+    
     PFQuery * query = [PFQuery queryWithClassName:@"Passenger"];
     [query whereKey:@"available" equalTo:[NSNumber numberWithBool:true]];
     [query whereKey:@"source" equalTo:self.driver.source];
     [query whereKey:@"destination" equalTo:self.driver.destination];
+    [query whereKey:@"createdAt" greaterThanOrEqualTo:date];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             [self.passengerCountLabel setText:[NSString stringWithFormat:@"%d", [objects count]]];
