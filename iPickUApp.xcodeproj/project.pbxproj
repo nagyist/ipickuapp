@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD04112F17EAD1C200B27456 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04112D17EAD1C200B27456 /* car.png */; };
+		DD04113017EAD1C200B27456 /* passenger.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04112E17EAD1C200B27456 /* passenger.png */; };
+		DD04113617EAD89500B27456 /* pin_pickup.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113517EAD89500B27456 /* pin_pickup.png */; };
+		DD04113817EAD92A00B27456 /* pin_dropoff.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113717EAD92A00B27456 /* pin_dropoff.png */; };
 		DD8B61151793CC79009591D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61141793CC79009591D6 /* UIKit.framework */; };
 		DD8B61171793CC79009591D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61161793CC79009591D6 /* Foundation.framework */; };
 		DD8B61191793CC79009591D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61181793CC79009591D6 /* CoreGraphics.framework */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD04112D17EAD1C200B27456 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		DD04112E17EAD1C200B27456 /* passenger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passenger.png; sourceTree = "<group>"; };
+		DD04113517EAD89500B27456 /* pin_pickup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_pickup.png; sourceTree = "<group>"; };
+		DD04113717EAD92A00B27456 /* pin_dropoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_dropoff.png; sourceTree = "<group>"; };
 		DD8B61111793CC79009591D6 /* iPickUApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPickUApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8B61141793CC79009591D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD8B61161793CC79009591D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +114,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD04112C17EAD1C200B27456 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DD04113517EAD89500B27456 /* pin_pickup.png */,
+				DD04113717EAD92A00B27456 /* pin_dropoff.png */,
+				DD04112D17EAD1C200B27456 /* car.png */,
+				DD04112E17EAD1C200B27456 /* passenger.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		DD8B61081793CC79009591D6 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +165,7 @@
 		DD8B611A1793CC79009591D6 /* iPickUApp */ = {
 			isa = PBXGroup;
 			children = (
+				DD04112C17EAD1C200B27456 /* images */,
 				DD8B615B1795CBE8009591D6 /* Protocols */,
 				DD8B61231793CC79009591D6 /* AppDelegate.h */,
 				DD8B61241793CC79009591D6 /* AppDelegate.m */,
@@ -258,6 +278,10 @@
 				DD8B61291793CC79009591D6 /* Default@2x.png in Resources */,
 				DD8B612B1793CC79009591D6 /* Default-568h@2x.png in Resources */,
 				DD8B612E1793CC79009591D6 /* MainStoryboard.storyboard in Resources */,
+				DD04112F17EAD1C200B27456 /* car.png in Resources */,
+				DD04113017EAD1C200B27456 /* passenger.png in Resources */,
+				DD04113617EAD89500B27456 /* pin_pickup.png in Resources */,
+				DD04113817EAD92A00B27456 /* pin_dropoff.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

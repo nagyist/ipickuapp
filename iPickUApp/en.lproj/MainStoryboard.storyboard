@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - iPickUApp-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
@@ -12,9 +12,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-V6-IdH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-V6-IdH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Ptw-Lf-fng"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Driver">
+                                <state key="normal" backgroundImage="car.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -22,12 +25,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F4g-xw-SWY" kind="push" id="IQN-Kk-c5H"/>
+                                    <segue destination="PnW-rZ-iAG" kind="push" id="QJ9-Ek-kcQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-e2-NwI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-e2-NwI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="3UZ-ip-2bk"/>
+                                    <constraint firstAttribute="width" constant="130" id="kTs-xM-URo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Passenger">
+                                <state key="normal" backgroundImage="passenger.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,19 +42,50 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="PnW-rZ-iAG" kind="push" id="LJT-27-v7S"/>
+                                    <segue destination="F4g-xw-SWY" kind="push" id="RKu-1E-0Hs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="What do you need?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Hdc-b8-zMX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Jn9-FX-tN7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ride" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="f09-eM-heB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EO2-qI-Oap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Passenger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="okc-Cl-7ks">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1wK-Uw-xBX"/>
+                                    <constraint firstAttribute="width" constant="142" id="NES-Qr-yzH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NwH-V6-IdH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="110" id="2qI-KO-1mt"/>
-                            <constraint firstItem="NwH-V6-IdH" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="GzH-ei-lyw"/>
-                            <constraint firstAttribute="bottom" secondItem="MOW-e2-NwI" secondAttribute="bottom" constant="190" id="koj-Yy-hgk"/>
-                            <constraint firstItem="MOW-e2-NwI" firstAttribute="centerX" secondItem="NwH-V6-IdH" secondAttribute="centerX" type="default" id="uq8-Mw-mqz"/>
+                            <constraint firstAttribute="bottom" secondItem="okc-Cl-7ks" secondAttribute="bottom" constant="27" id="52X-cf-IcU"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="top" secondItem="MOW-e2-NwI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="66s-sN-YZA"/>
+                            <constraint firstItem="MOW-e2-NwI" firstAttribute="centerX" secondItem="Hdc-b8-zMX" secondAttribute="centerX" type="default" id="Ae1-W6-qo2"/>
+                            <constraint firstItem="MOW-e2-NwI" firstAttribute="leading" secondItem="NwH-V6-IdH" secondAttribute="leading" type="default" id="CKB-vk-P22"/>
+                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EQg-wo-x7f"/>
+                            <constraint firstItem="NwH-V6-IdH" firstAttribute="top" secondItem="f09-eM-heB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="LJ7-5o-un7"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="leading" secondItem="f09-eM-heB" secondAttribute="leading" type="default" id="QFX-Pr-0hc"/>
+                            <constraint firstItem="f09-eM-heB" firstAttribute="centerX" secondItem="NwH-V6-IdH" secondAttribute="centerX" type="default" id="Txf-b8-k5v"/>
+                            <constraint firstItem="f09-eM-heB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="39" id="UTH-tQ-SKK"/>
+                            <constraint firstItem="MOW-e2-NwI" firstAttribute="trailing" secondItem="NwH-V6-IdH" secondAttribute="trailing" type="default" id="Wz8-is-Ni8"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="trailing" secondItem="f09-eM-heB" secondAttribute="trailing" type="default" id="mOf-1W-54Z"/>
+                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="qXc-tP-Wfb"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="yRS-pa-OAs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0vO-nd-XBU"/>
+                    <navigationItem key="navigationItem" title="iPickUApp" id="0vO-nd-XBU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,10 +124,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iI-Mf-ne4">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="191" id="Er0-Me-J1S"/>
+                                    <constraint firstAttribute="height" constant="95" id="qHz-wp-OJd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Select Pick up location">
+                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="23" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="35" maxY="5"/>
+                                <state key="normal" title="Pickup Location" image="pin_pickup.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -101,8 +141,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL2-v6-EeM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Far-g4-oPG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Select Drop off location">
+                                <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="35" maxY="5"/>
+                                <state key="normal" title="Drop Off Location" image="pin_dropoff.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -158,19 +202,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6iI-Mf-ne4" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="66" id="3pY-Td-gZ0"/>
                             <constraint firstItem="ulB-Sm-Jg2" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7rz-xI-cU0"/>
-                            <constraint firstItem="kQz-W9-F8j" firstAttribute="centerX" secondItem="bbj-Rd-VKY" secondAttribute="centerX" type="default" id="84r-JJ-cGb"/>
-                            <constraint firstItem="YL2-v6-EeM" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="135" id="Wih-Mg-bKv"/>
-                            <constraint firstItem="YL2-v6-EeM" firstAttribute="centerX" secondItem="yNP-6T-mlV" secondAttribute="centerX" type="default" id="X2X-TN-1Yh"/>
+                            <constraint firstAttribute="trailing" secondItem="YL2-v6-EeM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CDE-zf-uix"/>
+                            <constraint firstAttribute="trailing" secondItem="6iI-Mf-ne4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DZZ-3N-jjI"/>
+                            <constraint firstItem="YL2-v6-EeM" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="176" id="EBQ-UQ-PnS"/>
                             <constraint firstItem="ulB-Sm-Jg2" firstAttribute="top" secondItem="jaF-KP-kbA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XJI-Su-MF9"/>
+                            <constraint firstItem="YL2-v6-EeM" firstAttribute="centerX" secondItem="4sM-fj-BvJ" secondAttribute="centerX" type="default" id="a5H-em-Srd"/>
                             <constraint firstAttribute="bottom" secondItem="Zx8-kN-WOC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bTR-qF-Ifw"/>
-                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="centerX" secondItem="bbj-Rd-VKY" secondAttribute="centerX" type="default" id="gVa-n0-IVD"/>
-                            <constraint firstItem="yNP-6T-mlV" firstAttribute="top" secondItem="6iI-Mf-ne4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gwf-H4-djO"/>
-                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="top" secondItem="YL2-v6-EeM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="i68-Ww-Wbs"/>
+                            <constraint firstItem="YL2-v6-EeM" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="euv-9o-oRl"/>
+                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="top" secondItem="YL2-v6-EeM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="i55-H5-hXn"/>
                             <constraint firstAttribute="bottom" secondItem="ulB-Sm-Jg2" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oZr-Rs-a3V"/>
                             <constraint firstItem="jaF-KP-kbA" firstAttribute="top" secondItem="kQz-W9-F8j" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qBO-ii-6aQ"/>
-                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="centerX" secondItem="YL2-v6-EeM" secondAttribute="centerX" type="default" id="tGs-Qo-WMO"/>
+                            <constraint firstItem="yNP-6T-mlV" firstAttribute="top" secondItem="6iI-Mf-ne4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rTd-p5-eGr"/>
+                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="centerX" secondItem="kQz-W9-F8j" secondAttribute="centerX" type="default" id="t4p-1o-319"/>
+                            <constraint firstItem="6iI-Mf-ne4" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tbG-SH-T8x"/>
+                            <constraint firstItem="yNP-6T-mlV" firstAttribute="centerX" secondItem="6iI-Mf-ne4" secondAttribute="centerX" type="default" id="tzP-SR-zks"/>
                             <constraint firstAttribute="trailing" secondItem="Zx8-kN-WOC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vhK-ug-0yR"/>
                             <constraint firstItem="kQz-W9-F8j" firstAttribute="centerX" secondItem="jaF-KP-kbA" secondAttribute="centerX" type="default" id="wzg-H0-HaE"/>
                             <constraint firstItem="6iI-Mf-ne4" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="20" symbolic="YES" type="default" id="zUS-fx-tz5"/>
@@ -313,7 +359,9 @@
                             <outlet property="delegate" destination="yUv-0n-lVT" id="NDI-Jh-6NE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pick up Location" id="4sG-m3-fl4"/>
+                    <navigationItem key="navigationItem" title="Pick up Location" id="4sG-m3-fl4">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="eeh-nW-tSq"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTS-VD-eLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,6 +441,7 @@
                             <constraint firstItem="oYN-Q0-1yn" firstAttribute="trailing" secondItem="F9V-I5-dU3" secondAttribute="trailing" type="default" id="veH-BV-En9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IrO-u7-Cm1"/>
                     <connections>
                         <outlet property="passengerCountLabel" destination="uBt-WS-8HG" id="oyt-aM-Qhz"/>
                     </connections>
@@ -687,7 +736,9 @@
                             <outlet property="delegate" destination="MHi-GH-dYJ" id="bmk-2p-Vdt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Drop off Location" id="F1R-dv-k67"/>
+                    <navigationItem key="navigationItem" title="Drop off Location" id="F1R-dv-k67">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="7MK-OT-7wU"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZlT-Di-yjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -712,19 +763,22 @@
             <point key="canvasLocation" x="-91" y="287"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="car.png" width="256" height="256"/>
+        <image name="passenger.png" width="256" height="256"/>
+        <image name="pin_dropoff.png" width="128" height="128"/>
+        <image name="pin_pickup.png" width="128" height="128"/>
+    </resources>
     <classes>
         <class className="DriverTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverTripViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onDecreaseSeatsClick:"/>
-                <relationship kind="action" name="onDeleteClick:"/>
                 <relationship kind="outlet" name="passengerCountLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="DriverViewController" superclassName="PassengerViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onSeatPickerClick:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="seatPicker" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
@@ -737,9 +791,6 @@
         <class className="PassengerTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerTripViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onDeleteClick:"/>
-                <relationship kind="action" name="onPickUpClick:"/>
-                <relationship kind="action" name="onRefreshClick:"/>
                 <relationship kind="outlet" name="carCountLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="seatCountLabel" candidateClass="UILabel"/>
             </relationships>
