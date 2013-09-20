@@ -15,6 +15,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-V6-IdH">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Ptw-Lf-fng"/>
+                                    <constraint firstAttribute="width" constant="130" id="nqP-66-SaE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="car.png">
@@ -31,7 +32,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOW-e2-NwI">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="3UZ-ip-2bk"/>
-                                    <constraint firstAttribute="width" constant="130" id="kTs-xM-URo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="passenger.png">
@@ -47,6 +47,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="What do you need?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Hdc-b8-zMX">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="8MB-Ec-JQQ"/>
                                     <constraint firstAttribute="height" constant="60" id="Jn9-FX-tN7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="25"/>
@@ -55,6 +56,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ride" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="f09-eM-heB">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="EO2-qI-Oap"/>
+                                    <constraint firstAttribute="width" constant="142" id="pIa-ah-c62"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="25"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +64,6 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Passenger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="okc-Cl-7ks">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="1wK-Uw-xBX"/>
-                                    <constraint firstAttribute="width" constant="142" id="NES-Qr-yzH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="25"/>
                                 <nil key="highlightedColor"/>
@@ -70,19 +71,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="okc-Cl-7ks" secondAttribute="bottom" constant="27" id="52X-cf-IcU"/>
-                            <constraint firstItem="okc-Cl-7ks" firstAttribute="top" secondItem="MOW-e2-NwI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="66s-sN-YZA"/>
-                            <constraint firstItem="MOW-e2-NwI" firstAttribute="centerX" secondItem="Hdc-b8-zMX" secondAttribute="centerX" type="default" id="Ae1-W6-qo2"/>
-                            <constraint firstItem="MOW-e2-NwI" firstAttribute="leading" secondItem="NwH-V6-IdH" secondAttribute="leading" type="default" id="CKB-vk-P22"/>
-                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="EQg-wo-x7f"/>
-                            <constraint firstItem="NwH-V6-IdH" firstAttribute="top" secondItem="f09-eM-heB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="LJ7-5o-un7"/>
-                            <constraint firstItem="okc-Cl-7ks" firstAttribute="leading" secondItem="f09-eM-heB" secondAttribute="leading" type="default" id="QFX-Pr-0hc"/>
-                            <constraint firstItem="f09-eM-heB" firstAttribute="centerX" secondItem="NwH-V6-IdH" secondAttribute="centerX" type="default" id="Txf-b8-k5v"/>
-                            <constraint firstItem="f09-eM-heB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="39" id="UTH-tQ-SKK"/>
-                            <constraint firstItem="MOW-e2-NwI" firstAttribute="trailing" secondItem="NwH-V6-IdH" secondAttribute="trailing" type="default" id="Wz8-is-Ni8"/>
-                            <constraint firstItem="okc-Cl-7ks" firstAttribute="trailing" secondItem="f09-eM-heB" secondAttribute="trailing" type="default" id="mOf-1W-54Z"/>
-                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="qXc-tP-Wfb"/>
-                            <constraint firstItem="okc-Cl-7ks" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="yRS-pa-OAs"/>
+                            <constraint firstItem="MOW-e2-NwI" firstAttribute="trailing" secondItem="NwH-V6-IdH" secondAttribute="trailing" type="default" id="6Ue-ii-m1a"/>
+                            <constraint firstAttribute="bottom" secondItem="MOW-e2-NwI" secondAttribute="bottom" constant="86" id="6qc-1r-2HL"/>
+                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="trailing" secondItem="f09-eM-heB" secondAttribute="trailing" type="default" id="FYX-jk-zvS"/>
+                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="39" id="GD6-Fg-RuE"/>
+                            <constraint firstItem="NwH-V6-IdH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="124" id="GKI-mB-Lwv"/>
+                            <constraint firstItem="Hdc-b8-zMX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="SLl-xo-t83"/>
+                            <constraint firstItem="MOW-e2-NwI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Tgx-dp-muZ"/>
+                            <constraint firstItem="NwH-V6-IdH" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="X79-mj-LW1"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="centerY" secondItem="MOW-e2-NwI" secondAttribute="centerY" type="default" id="fEM-Ui-hvM"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="leading" secondItem="f09-eM-heB" secondAttribute="leading" type="default" id="lNG-5X-Zep"/>
+                            <constraint firstItem="okc-Cl-7ks" firstAttribute="trailing" secondItem="f09-eM-heB" secondAttribute="trailing" type="default" id="p2I-b1-fqM"/>
+                            <constraint firstItem="f09-eM-heB" firstAttribute="centerY" secondItem="NwH-V6-IdH" secondAttribute="centerY" type="default" id="vhe-mZ-Sth"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="iPickUApp" id="0vO-nd-XBU"/>
@@ -113,24 +113,24 @@
                                     <action selector="onSeatPickerClick:" destination="F4g-xw-SWY" eventType="valueChanged" id="2gO-c6-sbY"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Spaces available (driver not included)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="153" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-W9-F8j">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Passengers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="99" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-W9-F8j">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="OC1-3G-Jef"/>
-                                    <constraint firstAttribute="width" constant="153" id="hQd-RQ-WUx"/>
+                                    <constraint firstAttribute="width" constant="99" id="4GK-kg-6VY"/>
+                                    <constraint firstAttribute="height" constant="29" id="iOk-rO-yeq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iI-Mf-ne4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iI-Mf-ne4">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="qHz-wp-OJd"/>
+                                    <constraint firstAttribute="height" constant="100" id="0PD-tR-Zuf"/>
+                                    <constraint firstAttribute="width" constant="286" id="nbd-sL-nE1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="23" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="35" maxY="5"/>
-                                <state key="normal" title="Pickup Location" image="pin_pickup.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="25" minY="10" maxX="175" maxY="10"/>
+                                <state key="normal" title="Pick up Location" image="pin_pickup.png" backgroundImage="button_background.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -140,13 +140,13 @@
                                     <segue destination="yUv-0n-lVT" kind="push" identifier="PICK_UP_LOCATION" id="fXa-WI-Os5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL2-v6-EeM">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YL2-v6-EeM">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="Far-g4-oPG"/>
+                                    <constraint firstAttribute="height" constant="100" id="5My-v8-gn2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="35" maxY="5"/>
-                                <state key="normal" title="Drop Off Location" image="pin_dropoff.png">
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="25" minY="10" maxX="175" maxY="10"/>
+                                <state key="normal" title="Drop Off Location" image="pin_dropoff.png" backgroundImage="button_background.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -160,20 +160,30 @@
                                     <segue destination="MHi-GH-dYJ" kind="push" identifier="DROP_OFF_LOCATION" id="to9-Jf-qTO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pick up location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNP-6T-mlV">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pick up location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNP-6T-mlV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ucd-oC-A3J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drop off location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sM-fj-BvJ">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drop off location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sM-fj-BvJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="R6C-e5-uQI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulB-Sm-Jg2">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="5Bk-ge-SO8"/>
+                                    <constraint firstAttribute="height" constant="44" id="hhs-uk-CVS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="15"/>
+                                <state key="normal" title="Clear" backgroundImage="clear_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -184,13 +194,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx8-kN-WOC">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="xGC-jC-ZgL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="15"/>
+                                <state key="normal" title="Submit" backgroundImage="submit_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="disabled">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,25 +213,27 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.84640370244565211" green="0.84640370244565211" blue="0.84640370244565211" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jaF-KP-kbA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1MM-gG-EWF"/>
                             <constraint firstItem="ulB-Sm-Jg2" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7rz-xI-cU0"/>
-                            <constraint firstAttribute="trailing" secondItem="YL2-v6-EeM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CDE-zf-uix"/>
-                            <constraint firstAttribute="trailing" secondItem="6iI-Mf-ne4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DZZ-3N-jjI"/>
-                            <constraint firstItem="YL2-v6-EeM" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="176" id="EBQ-UQ-PnS"/>
-                            <constraint firstItem="ulB-Sm-Jg2" firstAttribute="top" secondItem="jaF-KP-kbA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XJI-Su-MF9"/>
-                            <constraint firstItem="YL2-v6-EeM" firstAttribute="centerX" secondItem="4sM-fj-BvJ" secondAttribute="centerX" type="default" id="a5H-em-Srd"/>
-                            <constraint firstAttribute="bottom" secondItem="Zx8-kN-WOC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bTR-qF-Ifw"/>
+                            <constraint firstItem="Zx8-kN-WOC" firstAttribute="top" secondItem="ulB-Sm-Jg2" secondAttribute="top" type="default" id="9w5-m7-Jg6"/>
+                            <constraint firstAttribute="trailing" secondItem="YL2-v6-EeM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Eqf-ZR-Diq"/>
+                            <constraint firstItem="yNP-6T-mlV" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="125" id="I55-ck-DYh"/>
+                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IlU-W3-Wwu"/>
+                            <constraint firstAttribute="trailing" secondItem="yNP-6T-mlV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Jhz-0w-y2L"/>
+                            <constraint firstAttribute="bottom" secondItem="4sM-fj-BvJ" secondAttribute="bottom" constant="203" id="M1r-rw-XHi"/>
+                            <constraint firstAttribute="bottom" secondItem="jaF-KP-kbA" secondAttribute="bottom" constant="131" id="PWf-rG-odv"/>
+                            <constraint firstItem="YL2-v6-EeM" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="180" id="S6B-Rk-oGa"/>
+                            <constraint firstItem="kQz-W9-F8j" firstAttribute="centerY" secondItem="jaF-KP-kbA" secondAttribute="centerY" type="default" id="YwR-sp-OgO"/>
+                            <constraint firstItem="kQz-W9-F8j" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aau-Ka-ID9"/>
                             <constraint firstItem="YL2-v6-EeM" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="euv-9o-oRl"/>
-                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="top" secondItem="YL2-v6-EeM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="i55-H5-hXn"/>
-                            <constraint firstAttribute="bottom" secondItem="ulB-Sm-Jg2" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oZr-Rs-a3V"/>
-                            <constraint firstItem="jaF-KP-kbA" firstAttribute="top" secondItem="kQz-W9-F8j" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qBO-ii-6aQ"/>
-                            <constraint firstItem="yNP-6T-mlV" firstAttribute="top" secondItem="6iI-Mf-ne4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rTd-p5-eGr"/>
-                            <constraint firstItem="4sM-fj-BvJ" firstAttribute="centerX" secondItem="kQz-W9-F8j" secondAttribute="centerX" type="default" id="t4p-1o-319"/>
+                            <constraint firstItem="yNP-6T-mlV" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oyF-op-KEr"/>
+                            <constraint firstItem="Zx8-kN-WOC" firstAttribute="bottom" secondItem="ulB-Sm-Jg2" secondAttribute="bottom" type="default" id="shv-xd-M9v"/>
                             <constraint firstItem="6iI-Mf-ne4" firstAttribute="leading" secondItem="bbj-Rd-VKY" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tbG-SH-T8x"/>
-                            <constraint firstItem="yNP-6T-mlV" firstAttribute="centerX" secondItem="6iI-Mf-ne4" secondAttribute="centerX" type="default" id="tzP-SR-zks"/>
+                            <constraint firstAttribute="bottom" secondItem="ulB-Sm-Jg2" secondAttribute="bottom" constant="19" id="uHp-w8-tzf"/>
                             <constraint firstAttribute="trailing" secondItem="Zx8-kN-WOC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vhK-ug-0yR"/>
-                            <constraint firstItem="kQz-W9-F8j" firstAttribute="centerX" secondItem="jaF-KP-kbA" secondAttribute="centerX" type="default" id="wzg-H0-HaE"/>
+                            <constraint firstAttribute="trailing" secondItem="4sM-fj-BvJ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vnv-at-a5x"/>
                             <constraint firstItem="6iI-Mf-ne4" firstAttribute="top" secondItem="bbj-Rd-VKY" secondAttribute="top" constant="20" symbolic="YES" type="default" id="zUS-fx-tz5"/>
                         </constraints>
                     </view>
@@ -376,7 +391,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="People waiting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo5-1i-Vu0">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EOI-Pi-ulx"/>
+                                    <constraint firstAttribute="width" constant="141" id="T3o-sg-KXb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -384,7 +403,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="QW2-aJ-PY3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -424,21 +443,33 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGk-bL-WMM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="e2z-jr-yXZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.84640370239999996" green="0.84640370239999996" blue="0.84640370239999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="YGk-bL-WMM" firstAttribute="top" secondItem="Gec-DJ-mC8" secondAttribute="top" constant="20" symbolic="YES" type="default" id="1pm-VO-TNM"/>
+                            <constraint firstItem="YGk-bL-WMM" firstAttribute="leading" secondItem="Gec-DJ-mC8" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2Ja-Ms-ykP"/>
+                            <constraint firstAttribute="trailing" secondItem="YGk-bL-WMM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3py-3v-Gpk"/>
+                            <constraint firstItem="NxZ-LL-qPi" firstAttribute="top" secondItem="Gec-DJ-mC8" secondAttribute="top" constant="63" id="3y5-va-hJd"/>
                             <constraint firstItem="oYN-Q0-1yn" firstAttribute="top" secondItem="F9V-I5-dU3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="53q-3f-0fo"/>
+                            <constraint firstItem="uBt-WS-8HG" firstAttribute="top" secondItem="Vo5-1i-Vu0" secondAttribute="top" type="default" id="5Ki-Wb-WtN"/>
                             <constraint firstAttribute="bottom" secondItem="Vo5-1i-Vu0" secondAttribute="bottom" constant="212" id="5Mx-Nq-uiD"/>
-                            <constraint firstItem="oYN-Q0-1yn" firstAttribute="centerX" secondItem="Gec-DJ-mC8" secondAttribute="centerX" type="default" id="77c-ed-9xX"/>
                             <constraint firstAttribute="trailing" secondItem="uBt-WS-8HG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="A2R-JM-2PJ"/>
-                            <constraint firstItem="uBt-WS-8HG" firstAttribute="baseline" secondItem="Vo5-1i-Vu0" secondAttribute="baseline" type="default" id="JGD-Jo-u1h"/>
                             <constraint firstItem="F9V-I5-dU3" firstAttribute="top" secondItem="NxZ-LL-qPi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Lgc-Br-luy"/>
                             <constraint firstItem="F9V-I5-dU3" firstAttribute="trailing" secondItem="NxZ-LL-qPi" secondAttribute="trailing" type="default" id="UE8-Qi-9dl"/>
                             <constraint firstItem="NxZ-LL-qPi" firstAttribute="leading" secondItem="F9V-I5-dU3" secondAttribute="leading" type="default" id="Wv5-LL-HQg"/>
                             <constraint firstItem="oYN-Q0-1yn" firstAttribute="leading" secondItem="F9V-I5-dU3" secondAttribute="leading" type="default" id="cgf-zg-CxF"/>
-                            <constraint firstItem="NxZ-LL-qPi" firstAttribute="top" secondItem="Gec-DJ-mC8" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tqX-aO-MLc"/>
+                            <constraint firstItem="uBt-WS-8HG" firstAttribute="baseline" secondItem="Vo5-1i-Vu0" secondAttribute="baseline" type="default" id="rS5-uh-bct"/>
                             <constraint firstItem="Vo5-1i-Vu0" firstAttribute="leading" secondItem="Gec-DJ-mC8" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vCe-Qu-vx6"/>
                             <constraint firstItem="oYN-Q0-1yn" firstAttribute="trailing" secondItem="F9V-I5-dU3" secondAttribute="trailing" type="default" id="veH-BV-En9"/>
+                            <constraint firstItem="NxZ-LL-qPi" firstAttribute="centerX" secondItem="YGk-bL-WMM" secondAttribute="centerX" type="default" id="wJs-cG-wNX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IrO-u7-Cm1"/>
@@ -458,12 +489,13 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVB-lL-FHc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVB-lL-FHc">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="191" id="2Cc-N4-R3V"/>
+                                    <constraint firstAttribute="height" constant="100" id="2SP-2N-Zw8"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Select Pick up location">
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="25" minY="10" maxX="175" maxY="10"/>
+                                <state key="normal" title="Pick up Location" image="pin_pickup.png" backgroundImage="button_background.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -475,8 +507,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gql-rH-sQq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KhF-RC-yKY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Select Drop off location">
+                                <inset key="imageEdgeInsets" minX="25" minY="10" maxX="175" maxY="10"/>
+                                <state key="normal" title="Drop off location" image="pin_dropoff.png" backgroundImage="button_background.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -490,20 +526,30 @@
                                     <segue destination="MHi-GH-dYJ" kind="push" identifier="DROP_OFF_LOCATION" id="SdB-0j-8N2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pick up location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-zh-0JE">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pick up location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-zh-0JE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UeL-Bp-REm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drop off location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8R-RE-ZBX">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Drop off location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8R-RE-ZBX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bjr-Hb-XbE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUl-UX-B4F">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EY7-Gb-Kly"/>
+                                    <constraint firstAttribute="width" constant="75" id="kI1-Mm-O4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="15"/>
+                                <state key="normal" title="Clear" backgroundImage="clear_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -514,13 +560,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Han-Re-a21">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="RNm-9p-H1h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="15"/>
+                                <state key="normal" title="Submit" backgroundImage="submit_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="disabled">
-                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -530,19 +579,24 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.84640370239999996" green="0.84640370239999996" blue="0.84640370239999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="F8R-RE-ZBX" firstAttribute="centerX" secondItem="TzQ-QR-hyQ" secondAttribute="centerX" type="default" id="7SS-Hi-aal"/>
-                            <constraint firstItem="gql-rH-sQq" firstAttribute="centerX" secondItem="Rbc-zh-0JE" secondAttribute="centerX" type="default" id="9xW-uq-Ze5"/>
-                            <constraint firstAttribute="bottom" secondItem="Han-Re-a21" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Apy-u8-eHc"/>
-                            <constraint firstItem="HVB-lL-FHc" firstAttribute="leading" secondItem="TzQ-QR-hyQ" secondAttribute="leading" constant="66" id="C0T-fn-hxF"/>
-                            <constraint firstItem="F8R-RE-ZBX" firstAttribute="top" secondItem="TzQ-QR-hyQ" secondAttribute="top" constant="185" id="N8k-r5-ckK"/>
-                            <constraint firstItem="gql-rH-sQq" firstAttribute="top" secondItem="TzQ-QR-hyQ" secondAttribute="top" constant="135" id="P7D-i7-QoQ"/>
-                            <constraint firstAttribute="bottom" secondItem="bUl-UX-B4F" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Xsy-cI-eEv"/>
+                            <constraint firstItem="gql-rH-sQq" firstAttribute="top" secondItem="TzQ-QR-hyQ" secondAttribute="top" constant="180" id="1ud-28-h8E"/>
+                            <constraint firstAttribute="bottom" secondItem="F8R-RE-ZBX" secondAttribute="bottom" constant="203" id="2ib-R0-e40"/>
+                            <constraint firstItem="gql-rH-sQq" firstAttribute="leading" secondItem="TzQ-QR-hyQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="87n-vX-JfC"/>
+                            <constraint firstAttribute="trailing" secondItem="HVB-lL-FHc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8hx-Ix-Ovg"/>
+                            <constraint firstAttribute="bottom" secondItem="bUl-UX-B4F" secondAttribute="bottom" constant="19" id="Kd8-cJ-TZK"/>
+                            <constraint firstItem="HVB-lL-FHc" firstAttribute="leading" secondItem="TzQ-QR-hyQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Olp-DV-LsF"/>
+                            <constraint firstAttribute="trailing" secondItem="F8R-RE-ZBX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bkb-ro-hdN"/>
+                            <constraint firstAttribute="trailing" secondItem="gql-rH-sQq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="buW-Uh-FGw"/>
                             <constraint firstItem="HVB-lL-FHc" firstAttribute="top" secondItem="TzQ-QR-hyQ" secondAttribute="top" constant="20" symbolic="YES" type="default" id="d5Z-OV-I6L"/>
+                            <constraint firstItem="Han-Re-a21" firstAttribute="top" secondItem="bUl-UX-B4F" secondAttribute="top" type="default" id="f6P-Zy-26V"/>
                             <constraint firstAttribute="trailing" secondItem="Han-Re-a21" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lcL-i9-YH0"/>
-                            <constraint firstItem="F8R-RE-ZBX" firstAttribute="centerX" secondItem="gql-rH-sQq" secondAttribute="centerX" type="default" id="pH7-6X-Gjy"/>
-                            <constraint firstItem="Rbc-zh-0JE" firstAttribute="top" secondItem="TzQ-QR-hyQ" secondAttribute="top" constant="70" id="xE6-k4-CRv"/>
+                            <constraint firstItem="F8R-RE-ZBX" firstAttribute="leading" secondItem="TzQ-QR-hyQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nL5-qZ-Eaj"/>
+                            <constraint firstItem="Rbc-zh-0JE" firstAttribute="leading" secondItem="TzQ-QR-hyQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nly-Oh-ZUa"/>
+                            <constraint firstItem="Rbc-zh-0JE" firstAttribute="top" secondItem="TzQ-QR-hyQ" secondAttribute="top" constant="125" id="taD-LW-1X1"/>
+                            <constraint firstItem="bUl-UX-B4F" firstAttribute="bottom" secondItem="Han-Re-a21" secondAttribute="bottom" type="default" id="uVk-PA-Pin"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbc-zh-0JE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="x6I-FT-D4j"/>
                             <constraint firstItem="bUl-UX-B4F" firstAttribute="leading" secondItem="TzQ-QR-hyQ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xWO-k5-B5v"/>
                         </constraints>
                     </view>
@@ -594,21 +648,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="car count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-yF-7d4">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="ZSD-zB-tgy"/>
+                                    <constraint firstAttribute="height" constant="21" id="sWS-Xx-JZF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="seats available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKS-1O-E5J">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your trip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ng-41-Wxw">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Cw5-hr-SG2"/>
-                                    <constraint firstAttribute="width" constant="102" id="eda-8S-Z99"/>
+                                    <constraint firstAttribute="height" constant="21" id="gf1-X4-bst"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -616,12 +668,15 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="P2h-8K-ciK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gd-8i-gI5">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Mru-UE-aAS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -638,27 +693,38 @@
                                     <action selector="onRefreshClick:" destination="fUg-RD-Mc3" eventType="touchUpInside" id="uL3-0s-69U"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Your trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI6-9v-yrC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="nY3-aR-h1R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.84640370239999996" green="0.84640370239999996" blue="0.84640370239999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8C2-XP-4fu" firstAttribute="trailing" secondItem="1Nk-Xs-Jey" secondAttribute="trailing" type="default" id="5G1-pT-eUz"/>
                             <constraint firstItem="1Nk-Xs-Jey" firstAttribute="top" secondItem="8C2-XP-4fu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8eP-NX-xxu"/>
+                            <constraint firstItem="gI6-9v-yrC" firstAttribute="leading" secondItem="ea9-a3-sen" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9jK-g4-vRD"/>
                             <constraint firstAttribute="bottom" secondItem="zDz-6f-fDJ" secondAttribute="bottom" constant="80" id="DHv-Kl-323"/>
-                            <constraint firstItem="3Ng-41-Wxw" firstAttribute="centerX" secondItem="ea9-a3-sen" secondAttribute="centerX" type="default" id="Kbm-YY-kk2"/>
                             <constraint firstItem="2Gd-8i-gI5" firstAttribute="leading" secondItem="gpp-vW-KGx" secondAttribute="leading" type="default" id="KcN-nJ-Lkh"/>
                             <constraint firstItem="2Gd-8i-gI5" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="263" id="NLr-35-UUu"/>
-                            <constraint firstItem="3Ng-41-Wxw" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="20" symbolic="YES" type="default" id="T1g-P6-LT6"/>
+                            <constraint firstAttribute="trailing" secondItem="gI6-9v-yrC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="S2X-If-0oo"/>
+                            <constraint firstItem="kHG-yF-7d4" firstAttribute="top" secondItem="gpp-vW-KGx" secondAttribute="top" type="default" id="SHw-p2-ewH"/>
                             <constraint firstItem="zDz-6f-fDJ" firstAttribute="leading" secondItem="1Nk-Xs-Jey" secondAttribute="leading" type="default" id="UPA-qM-0w7"/>
                             <constraint firstItem="ZKS-1O-E5J" firstAttribute="leading" secondItem="ea9-a3-sen" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="VSE-nN-ovK"/>
-                            <constraint firstItem="8C2-XP-4fu" firstAttribute="centerX" secondItem="3Ng-41-Wxw" secondAttribute="centerX" type="default" id="WlI-0K-q62"/>
-                            <constraint firstItem="gpp-vW-KGx" firstAttribute="baseline" secondItem="kHG-yF-7d4" secondAttribute="baseline" type="default" id="X1A-oC-v6f"/>
+                            <constraint firstItem="gI6-9v-yrC" firstAttribute="centerX" secondItem="8C2-XP-4fu" secondAttribute="centerX" type="default" id="YZm-7S-826"/>
                             <constraint firstItem="1Nk-Xs-Jey" firstAttribute="leading" secondItem="8C2-XP-4fu" secondAttribute="leading" type="default" id="eJq-Bo-hXt"/>
                             <constraint firstItem="kHG-yF-7d4" firstAttribute="leading" secondItem="ea9-a3-sen" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hVi-Hn-JqA"/>
                             <constraint firstAttribute="trailing" secondItem="gpp-vW-KGx" secondAttribute="trailing" constant="67" id="hg6-Z4-yq6"/>
+                            <constraint firstItem="gI6-9v-yrC" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hp0-dp-a4c"/>
                             <constraint firstItem="2Gd-8i-gI5" firstAttribute="trailing" secondItem="gpp-vW-KGx" secondAttribute="trailing" type="default" id="mnN-rj-QZ5"/>
                             <constraint firstItem="8C2-XP-4fu" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="85" id="qex-gJ-DsK"/>
                             <constraint firstItem="kHG-yF-7d4" firstAttribute="top" secondItem="ea9-a3-sen" secondAttribute="top" constant="238" id="uqI-8W-M16"/>
                             <constraint firstItem="ZKS-1O-E5J" firstAttribute="top" secondItem="kHG-yF-7d4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xUW-i6-4FI"/>
+                            <constraint firstItem="gpp-vW-KGx" firstAttribute="baseline" secondItem="kHG-yF-7d4" secondAttribute="baseline" type="default" id="xec-Hv-CJc"/>
+                            <constraint firstItem="ZKS-1O-E5J" firstAttribute="trailing" secondItem="kHG-yF-7d4" secondAttribute="trailing" type="default" id="zZa-Ng-TmQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I0V-Fs-2PX"/>
@@ -764,21 +830,27 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_background.png" width="128" height="128"/>
         <image name="car.png" width="256" height="256"/>
+        <image name="clear_button.png" width="240" height="74"/>
         <image name="passenger.png" width="256" height="256"/>
         <image name="pin_dropoff.png" width="128" height="128"/>
         <image name="pin_pickup.png" width="128" height="128"/>
+        <image name="submit_button.png" width="240" height="74"/>
     </resources>
     <classes>
         <class className="DriverTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverTripViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onDecreaseSeatsClick:"/>
+                <relationship kind="action" name="onDeleteClick:"/>
                 <relationship kind="outlet" name="passengerCountLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="DriverViewController" superclassName="PassengerViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onSeatPickerClick:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="seatPicker" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
@@ -791,6 +863,9 @@
         <class className="PassengerTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerTripViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onDeleteClick:"/>
+                <relationship kind="action" name="onPickUpClick:"/>
+                <relationship kind="action" name="onRefreshClick:"/>
                 <relationship kind="outlet" name="carCountLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="seatCountLabel" candidateClass="UILabel"/>
             </relationships>
@@ -798,6 +873,8 @@
         <class className="PassengerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onClearClick:"/>
+                <relationship kind="action" name="onSUbmitClick:"/>
                 <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="selectDropOffLocationButton" candidateClass="UIButton"/>

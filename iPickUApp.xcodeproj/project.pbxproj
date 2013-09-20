@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		DD04112F17EAD1C200B27456 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04112D17EAD1C200B27456 /* car.png */; };
 		DD04113017EAD1C200B27456 /* passenger.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04112E17EAD1C200B27456 /* passenger.png */; };
-		DD04113617EAD89500B27456 /* pin_pickup.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113517EAD89500B27456 /* pin_pickup.png */; };
 		DD04113817EAD92A00B27456 /* pin_dropoff.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113717EAD92A00B27456 /* pin_dropoff.png */; };
+		DD04113C17EADBD800B27456 /* pin_pickup.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113B17EADBD800B27456 /* pin_pickup.png */; };
+		DD04113E17EADDEB00B27456 /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113D17EADDEB00B27456 /* button_background.png */; };
+		DD04114117EC299600B27456 /* submit_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113F17EC299600B27456 /* submit_button.png */; };
+		DD04114217EC299600B27456 /* clear_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04114017EC299600B27456 /* clear_button.png */; };
 		DD8B61151793CC79009591D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61141793CC79009591D6 /* UIKit.framework */; };
 		DD8B61171793CC79009591D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61161793CC79009591D6 /* Foundation.framework */; };
 		DD8B61191793CC79009591D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61181793CC79009591D6 /* CoreGraphics.framework */; };
@@ -44,8 +47,11 @@
 /* Begin PBXFileReference section */
 		DD04112D17EAD1C200B27456 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
 		DD04112E17EAD1C200B27456 /* passenger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passenger.png; sourceTree = "<group>"; };
-		DD04113517EAD89500B27456 /* pin_pickup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_pickup.png; sourceTree = "<group>"; };
 		DD04113717EAD92A00B27456 /* pin_dropoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_dropoff.png; sourceTree = "<group>"; };
+		DD04113B17EADBD800B27456 /* pin_pickup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_pickup.png; sourceTree = "<group>"; };
+		DD04113D17EADDEB00B27456 /* button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background.png; sourceTree = "<group>"; };
+		DD04113F17EC299600B27456 /* submit_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit_button.png; sourceTree = "<group>"; };
+		DD04114017EC299600B27456 /* clear_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear_button.png; sourceTree = "<group>"; };
 		DD8B61111793CC79009591D6 /* iPickUApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPickUApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8B61141793CC79009591D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD8B61161793CC79009591D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,7 +123,10 @@
 		DD04112C17EAD1C200B27456 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				DD04113517EAD89500B27456 /* pin_pickup.png */,
+				DD04113F17EC299600B27456 /* submit_button.png */,
+				DD04114017EC299600B27456 /* clear_button.png */,
+				DD04113D17EADDEB00B27456 /* button_background.png */,
+				DD04113B17EADBD800B27456 /* pin_pickup.png */,
 				DD04113717EAD92A00B27456 /* pin_dropoff.png */,
 				DD04112D17EAD1C200B27456 /* car.png */,
 				DD04112E17EAD1C200B27456 /* passenger.png */,
@@ -280,8 +289,11 @@
 				DD8B612E1793CC79009591D6 /* MainStoryboard.storyboard in Resources */,
 				DD04112F17EAD1C200B27456 /* car.png in Resources */,
 				DD04113017EAD1C200B27456 /* passenger.png in Resources */,
-				DD04113617EAD89500B27456 /* pin_pickup.png in Resources */,
 				DD04113817EAD92A00B27456 /* pin_dropoff.png in Resources */,
+				DD04113C17EADBD800B27456 /* pin_pickup.png in Resources */,
+				DD04113E17EADDEB00B27456 /* button_background.png in Resources */,
+				DD04114117EC299600B27456 /* submit_button.png in Resources */,
+				DD04114217EC299600B27456 /* clear_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

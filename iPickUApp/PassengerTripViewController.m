@@ -43,10 +43,16 @@
 }
 
 - (void)fetchDrivers {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comps = [NSDateComponents new];
+    comps.minute = -30;
+    NSDate *date = [calendar dateByAddingComponents:comps toDate:[NSDate date] options:0];
+    
     PFQuery * query = [PFQuery queryWithClassName:@"Driver"];
     [query whereKey:@"available" equalTo:[NSNumber numberWithBool:true]];
     [query whereKey:@"source" equalTo:self.passenger.source];
     [query whereKey:@"destination" equalTo:self.passenger.destination];
+    [query whereKey:@"updatedAt" greaterThanOrEqualTo:date];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             [self.carCountLabel setText:[NSString stringWithFormat:@"%d", [objects count]]];
