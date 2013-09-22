@@ -6,15 +6,13 @@
 //  Copyright (c) 2013 Giuseppe Macrì. All rights reserved.
 //
 
-#import "LocationViewController.h"
+#import "OriginViewController.h"
 
-
-
-@interface LocationViewController ()
+@interface OriginViewController ()
 
 @end
 
-@implementation LocationViewController
+@implementation OriginViewController
 
 @synthesize delegate;
 
@@ -22,9 +20,39 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        [self initParseClass];
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aCoder {
+    self = [super initWithCoder:aCoder];
+    if (self) {
+        [self initParseClass];
+    }
+    return self;
+}
+
+- (void)initParseClass {
+    // Customize the table
+    
+    // The className to query on
+    self.parseClassName = @"Origin";
+    
+    // The key of the PFObject to display in the label of the default cell style
+    self.textKey = @"description";
+    
+    // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
+    // self.imageKey = @"image";
+    
+    // Whether the built-in pull-to-refresh is enabled
+    self.pullToRefreshEnabled = YES;
+    
+    // Whether the built-in pagination is enabled
+    self.paginationEnabled = NO;
+    
+    // The number of objects to show per page
+    //        self.objectsPerPage = 25;
 }
 
 - (void)viewDidLoad
@@ -32,10 +60,10 @@
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
