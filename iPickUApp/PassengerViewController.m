@@ -7,7 +7,7 @@
 //
 
 #import "PassengerViewController.h"
-#import "OriginViewController.h"
+#import "LocationViewController.h"
 #import "PassengerTripViewController.h"
 
 @interface PassengerViewController ()
@@ -100,11 +100,11 @@
     NSString *segueIdentifier = [segue identifier];
     if ([segueIdentifier isEqualToString:PICKUP_LOCATION_SEGUE]) {
         self.isPickUp = YES;
-        OriginViewController *destination = [segue destinationViewController];
+        LocationViewController *destination = [segue destinationViewController];
         [destination setDelegate:self];
     } else if ([segueIdentifier isEqualToString:DROPOFF_LOCATION_SEGUE]) {
         self.isPickUp = NO;
-        OriginViewController *destination = [segue destinationViewController];
+        LocationViewController *destination = [segue destinationViewController];
         [destination setDelegate:self];
     } else if ([segueIdentifier isEqualToString:SUBMIT_REQUEST_SEGUE]) {
         [self setSegueDestinationInfo:segue.destinationViewController];

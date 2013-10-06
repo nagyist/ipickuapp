@@ -39,9 +39,13 @@
 		DD8B61501793D57C009591D6 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B614F1793D57C009591D6 /* Driver.m */; };
 		DD8B615317952C29009591D6 /* PassengerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615217952C29009591D6 /* PassengerViewController.m */; };
 		DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615617952CEC009591D6 /* DriverViewController.m */; };
-		DD8B615A1795CBA6009591D6 /* OriginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* OriginViewController.m */; };
+		DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* LocationViewController.m */; };
 		DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615E17961050009591D6 /* PassengerTripViewController.m */; };
 		DDF22C8B179A611100FF376C /* DriverTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF22C8A179A611100FF376C /* DriverTripViewController.m */; };
+		DDFB171817EEAB3900982E00 /* ParseCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171717EEAB3900982E00 /* ParseCommunication.m */; };
+		DDFB171F17F00C0900982E00 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171E17F00C0900982E00 /* City.m */; };
+		DDFB172217F01D1B00982E00 /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB172117F01D1B00982E00 /* Destination.m */; };
+		DDFB172517F01F0000982E00 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB172417F01F0000982E00 /* Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,14 +90,23 @@
 		DD8B615217952C29009591D6 /* PassengerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerViewController.m; sourceTree = "<group>"; };
 		DD8B615517952CEC009591D6 /* DriverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverViewController.h; sourceTree = "<group>"; };
 		DD8B615617952CEC009591D6 /* DriverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverViewController.m; sourceTree = "<group>"; };
-		DD8B61581795CBA6009591D6 /* OriginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginViewController.h; sourceTree = "<group>"; };
-		DD8B61591795CBA6009591D6 /* OriginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginViewController.m; sourceTree = "<group>"; };
+		DD8B61581795CBA6009591D6 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		DD8B61591795CBA6009591D6 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		DD8B615C1795CC0B009591D6 /* LocationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationProtocol.h; sourceTree = "<group>"; };
 		DD8B615D1796104F009591D6 /* PassengerTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerTripViewController.h; sourceTree = "<group>"; };
 		DD8B615E17961050009591D6 /* PassengerTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTripViewController.m; sourceTree = "<group>"; };
 		DDF22C89179A611100FF376C /* DriverTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverTripViewController.h; sourceTree = "<group>"; };
 		DDF22C8A179A611100FF376C /* DriverTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTripViewController.m; sourceTree = "<group>"; };
 		DDF22C8C179CE73D00FF376C /* TripProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripProtocol.h; sourceTree = "<group>"; };
+		DDFB171617EEAB3900982E00 /* ParseCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseCommunication.h; sourceTree = "<group>"; };
+		DDFB171717EEAB3900982E00 /* ParseCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseCommunication.m; sourceTree = "<group>"; };
+		DDFB171C17F0086600982E00 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		DDFB171D17F00C0900982E00 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		DDFB171E17F00C0900982E00 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		DDFB172017F01D1B00982E00 /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destination.h; sourceTree = "<group>"; };
+		DDFB172117F01D1B00982E00 /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Destination.m; sourceTree = "<group>"; };
+		DDFB172317F01F0000982E00 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		DDFB172417F01F0000982E00 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,23 +189,13 @@
 			children = (
 				DD04112C17EAD1C200B27456 /* images */,
 				DD8B615B1795CBE8009591D6 /* Protocols */,
+				DDFB171C17F0086600982E00 /* constants.h */,
 				DD8B61231793CC79009591D6 /* AppDelegate.h */,
 				DD8B61241793CC79009591D6 /* AppDelegate.m */,
 				DD8B612C1793CC79009591D6 /* MainStoryboard.storyboard */,
-				DD8B612F1793CC79009591D6 /* ViewController.h */,
-				DD8B61301793CC79009591D6 /* ViewController.m */,
+				DDFB171517EEAAE500982E00 /* ViewControllers */,
 				DD8B611B1793CC79009591D6 /* Supporting Files */,
 				DD8B615417952C34009591D6 /* Models */,
-				DD8B615117952C29009591D6 /* PassengerViewController.h */,
-				DD8B615217952C29009591D6 /* PassengerViewController.m */,
-				DD8B615517952CEC009591D6 /* DriverViewController.h */,
-				DD8B615617952CEC009591D6 /* DriverViewController.m */,
-				DD8B61581795CBA6009591D6 /* OriginViewController.h */,
-				DD8B61591795CBA6009591D6 /* OriginViewController.m */,
-				DD8B615D1796104F009591D6 /* PassengerTripViewController.h */,
-				DD8B615E17961050009591D6 /* PassengerTripViewController.m */,
-				DDF22C89179A611100FF376C /* DriverTripViewController.h */,
-				DDF22C8A179A611100FF376C /* DriverTripViewController.m */,
 			);
 			path = iPickUApp;
 			sourceTree = "<group>";
@@ -218,6 +221,14 @@
 				DD8B614C1793D346009591D6 /* Passenger.m */,
 				DD8B614E1793D57C009591D6 /* Driver.h */,
 				DD8B614F1793D57C009591D6 /* Driver.m */,
+				DDFB171D17F00C0900982E00 /* City.h */,
+				DDFB171E17F00C0900982E00 /* City.m */,
+				DDFB172317F01F0000982E00 /* Location.h */,
+				DDFB172417F01F0000982E00 /* Location.m */,
+				DDFB172017F01D1B00982E00 /* Destination.h */,
+				DDFB172117F01D1B00982E00 /* Destination.m */,
+				DDFB171617EEAB3900982E00 /* ParseCommunication.h */,
+				DDFB171717EEAB3900982E00 /* ParseCommunication.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -229,6 +240,25 @@
 				DDF22C8C179CE73D00FF376C /* TripProtocol.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		DDFB171517EEAAE500982E00 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD8B612F1793CC79009591D6 /* ViewController.h */,
+				DD8B61301793CC79009591D6 /* ViewController.m */,
+				DD8B615117952C29009591D6 /* PassengerViewController.h */,
+				DD8B615217952C29009591D6 /* PassengerViewController.m */,
+				DD8B615517952CEC009591D6 /* DriverViewController.h */,
+				DD8B615617952CEC009591D6 /* DriverViewController.m */,
+				DD8B61581795CBA6009591D6 /* LocationViewController.h */,
+				DD8B61591795CBA6009591D6 /* LocationViewController.m */,
+				DD8B615D1796104F009591D6 /* PassengerTripViewController.h */,
+				DD8B615E17961050009591D6 /* PassengerTripViewController.m */,
+				DDF22C89179A611100FF376C /* DriverTripViewController.h */,
+				DDF22C8A179A611100FF376C /* DriverTripViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +341,13 @@
 				DD8B61501793D57C009591D6 /* Driver.m in Sources */,
 				DD8B615317952C29009591D6 /* PassengerViewController.m in Sources */,
 				DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */,
-				DD8B615A1795CBA6009591D6 /* OriginViewController.m in Sources */,
+				DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */,
 				DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */,
 				DDF22C8B179A611100FF376C /* DriverTripViewController.m in Sources */,
+				DDFB171817EEAB3900982E00 /* ParseCommunication.m in Sources */,
+				DDFB171F17F00C0900982E00 /* City.m in Sources */,
+				DDFB172217F01D1B00982E00 /* Destination.m in Sources */,
+				DDFB172517F01F0000982E00 /* Location.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

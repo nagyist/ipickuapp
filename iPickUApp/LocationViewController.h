@@ -11,8 +11,7 @@
 
 #define SETUP_SEGUE @"SETUP_SEGUE"
 
-
-@interface OriginViewController : PFQueryTableViewController
+@interface LocationViewController : UITableViewController
 
 @property (weak, nonatomic) id<LocationProtocol> delegate;
 

@@ -6,13 +6,18 @@
 //  Copyright (c) 2013 Giuseppe Macrì. All rights reserved.
 //
 
-#import "OriginViewController.h"
+#import "LocationViewController.h"
+#import "City.h"
+#import "Location.h"
 
-@interface OriginViewController ()
+@interface LocationViewController ()
+
+@property (weak, nonatomic) NSArray *cities;
+@property (weak, nonatomic) NSMutableDictionary *origins;
 
 @end
 
-@implementation OriginViewController
+@implementation LocationViewController
 
 @synthesize delegate;
 
@@ -20,7 +25,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        [self initParseClass];
+//        [self initParseClass];
     }
     return self;
 }
@@ -28,32 +33,34 @@
 - (id)initWithCoder:(NSCoder *)aCoder {
     self = [super initWithCoder:aCoder];
     if (self) {
-        [self initParseClass];
+//        [self initParseClass];
+        self.cities = [[ParseCommunication parseCommunication] cities];
+        self.origins = [[ParseCommunication parseCommunication] origins];
     }
     return self;
 }
 
-- (void)initParseClass {
-    // Customize the table
-    
-    // The className to query on
-    self.parseClassName = @"Origin";
-    
-    // The key of the PFObject to display in the label of the default cell style
-    self.textKey = @"description";
-    
-    // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
-    // self.imageKey = @"image";
-    
-    // Whether the built-in pull-to-refresh is enabled
-    self.pullToRefreshEnabled = YES;
-    
-    // Whether the built-in pagination is enabled
-    self.paginationEnabled = NO;
-    
-    // The number of objects to show per page
-    //        self.objectsPerPage = 25;
-}
+//- (void)initParseClass {
+//    // Customize the table
+//    
+//    // The className to query on
+//    self.parseClassName = @"Origin";
+//    
+//    // The key of the PFObject to display in the label of the default cell style
+//    self.textKey = @"description";
+//    
+//    // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
+//    // self.imageKey = @"image";
+//    
+//    // Whether the built-in pull-to-refresh is enabled
+//    self.pullToRefreshEnabled = YES;
+//    
+//    // Whether the built-in pagination is enabled
+//    self.paginationEnabled = NO;
+//    
+//    // The number of objects to show per page
+//    //        self.objectsPerPage = 25;
+//}
 
 - (void)viewDidLoad
 {
@@ -63,7 +70,7 @@
     self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,29 +81,44 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return [self.cities count];
+}
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 0;
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    City *city = [self.cities objectAtIndex:section];
+    NSArray *stations = [self.origins objectForKey:city.name];
+    return [stations count];
+}
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"Cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-//    
-//    // Configure the cell...
-//    
-//    return cell;
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = LOCATION_CELL;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:LOCATION_CELL];
+    }
+    
+    City *city = [self.cities objectAtIndex:indexPath.section];
+    NSArray *stations = [self.origins objectForKey:city.name];
+    Location *location = [stations objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = location.station;
+    cell.detailTextLabel.text = location.city;
+    
+    
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    City *city = [self.cities objectAtIndex:section];
+    return city.name;
+}
 
 /*
 // Override to support conditional editing of the table view.

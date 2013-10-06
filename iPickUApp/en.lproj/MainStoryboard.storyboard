@@ -251,33 +251,33 @@
             </objects>
             <point key="canvasLocation" x="1038" y="-108"/>
         </scene>
-        <!--Origin View Controller - Pick Up Location-->
+        <!--Location View Controller - Pick Up Location-->
         <scene sceneID="YlY-mm-JKW">
             <objects>
-                <tableViewController title="Pick Up Location" id="yUv-0n-lVT" customClass="OriginViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="P1c-r9-rEu">
+                <tableViewController title="Pick Up Location" id="yUv-0n-lVT" customClass="LocationViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="P1c-r9-rEu">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="mpB-DY-wrr" detailTextLabel="ylP-mr-GJZ" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="PVc-Ky-dWv">
-                                <rect key="frame" x="0.0" y="22" width="320" height="75"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LOCATION_CELL" textLabel="mpB-DY-wrr" detailTextLabel="ylP-mr-GJZ" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="PVc-Ky-dWv">
+                                <rect key="frame" x="0.0" y="46" width="320" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                    <rect key="frame" x="10" y="1" width="300" height="74"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Beale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mpB-DY-wrr">
-                                            <rect key="frame" x="10" y="17" width="49" height="22"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="San Francisco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mpB-DY-wrr">
+                                            <rect key="frame" x="10" y="18" width="112" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Between Howard and Folsom" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ylP-mr-GJZ">
-                                            <rect key="frame" x="10" y="39" width="184" height="18"/>
+                                            <rect key="frame" x="10" y="39" width="194" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
@@ -655,10 +655,10 @@
             </objects>
             <point key="canvasLocation" x="1750" y="1255"/>
         </scene>
-        <!--Origin View Controller - Drop Off Location-->
+        <!--Location View Controller - Drop Off Location-->
         <scene sceneID="aWj-q4-vwE">
             <objects>
-                <tableViewController title="Drop Off Location" id="MHi-GH-dYJ" customClass="OriginViewController" sceneMemberID="viewController">
+                <tableViewController title="Drop Off Location" id="MHi-GH-dYJ" customClass="LocationViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Tg7-2a-dbR">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -760,33 +760,24 @@
         <class className="DriverTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverTripViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onDecreaseSeatsClick:"/>
-                <relationship kind="action" name="onDeleteClick:"/>
                 <relationship kind="outlet" name="passengerCountLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="DriverViewController" superclassName="PassengerViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DriverViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onSeatPickerClick:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="seatPicker" candidateClass="UISegmentedControl"/>
             </relationships>
+        </class>
+        <class className="LocationViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LocationViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="OriginViewController" superclassName="PFQueryTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OriginViewController.h"/>
-        </class>
-        <class className="PFQueryTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFQueryTableViewController.h"/>
-        </class>
         <class className="PassengerTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerTripViewController.h"/>
             <relationships>
-                <relationship kind="action" name="onDeleteClick:"/>
-                <relationship kind="action" name="onPickUpClick:"/>
-                <relationship kind="action" name="onRefreshClick:"/>
                 <relationship kind="outlet" name="carCountLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="seatCountLabel" candidateClass="UILabel"/>
             </relationships>
@@ -794,6 +785,8 @@
         <class className="PassengerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PassengerViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onClearClick:"/>
+                <relationship kind="action" name="onSUbmitClick:"/>
                 <relationship kind="outlet" name="dropOffLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pickUpLocationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="selectDropOffLocationButton" candidateClass="UIButton"/>

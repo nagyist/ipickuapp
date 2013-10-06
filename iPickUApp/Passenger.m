@@ -7,7 +7,6 @@
 //
 
 #import "Passenger.h"
-
 #import <Parse/PFObject+Subclass.h>
 
 @implementation Passenger
