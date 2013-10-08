@@ -282,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lh-3W-VfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-108"/>
+            <point key="canvasLocation" x="1050" y="583"/>
         </scene>
         <!--Location View Controller - Pick Up Location-->
         <scene sceneID="YlY-mm-JKW">
@@ -443,7 +443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7G-Q0-zOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="-371"/>
+            <point key="canvasLocation" x="1750" y="1014"/>
         </scene>
         <!--Passenger View Controller - New passenger-->
         <scene sceneID="RG8-WI-0dX">
@@ -581,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qy4-FN-BuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="563"/>
+            <point key="canvasLocation" x="1058" y="-155"/>
         </scene>
         <!--Passenger Trip View Controller-->
         <scene sceneID="4kW-Wo-gDD">
@@ -724,7 +724,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9g-wl-6lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="998"/>
+            <point key="canvasLocation" x="1750" y="-386"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="buy-cF-g80">
@@ -748,19 +748,9 @@
     <resources>
         <image name="bug.png" width="512" height="512"/>
         <image name="button_background.png" width="128" height="128"/>
-        <image name="button_background.png" width="128" height="128"/>
-        <image name="button_background.png" width="128" height="128"/>
-        <image name="button_background.png" width="128" height="128"/>
         <image name="car.png" width="256" height="256"/>
         <image name="clear_button.png" width="240" height="74"/>
-        <image name="clear_button.png" width="240" height="74"/>
-        <image name="clear_button.png" width="240" height="74"/>
-        <image name="clear_button.png" width="240" height="74"/>
         <image name="passenger.png" width="256" height="256"/>
-        <image name="submit_button.png" width="240" height="74"/>
-        <image name="submit_button.png" width="240" height="74"/>
-        <image name="submit_button.png" width="240" height="74"/>
-        <image name="submit_button.png" width="240" height="74"/>
         <image name="submit_button.png" width="240" height="74"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -769,6 +759,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0YI-R0-w69"/>
+        <segue reference="iO6-hG-NLy"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,11 +7,11 @@
 //
 
 #import <Parse/Parse.h>
+#import "City.h"
 
 @interface Location : PFObject<PFSubclassing>
 
-@property (strong, nonatomic) NSString *city;
-@property (strong, nonatomic) PFObject *cityObject;
+@property (strong, nonatomic) City *city;
 @property (strong, nonatomic) NSString *station;
 @property (strong, nonatomic) NSNumber *isDestination;
 @property (strong, nonatomic) NSNumber *isOrigin;

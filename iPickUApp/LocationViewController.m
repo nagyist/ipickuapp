@@ -34,12 +34,6 @@
     self = [super initWithCoder:aCoder];
     if (self) {
         self.cities = [[ParseCommunication parseCommunication] cities];
-        if (self.isOrigin) {
-            self.locations = [[ParseCommunication parseCommunication] origins];
-        } else {
-            self.locations = [[ParseCommunication parseCommunication] destinations];
-        }
-        
     }
     return self;
 }
@@ -51,6 +45,11 @@
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
  
+    if (self.isOrigin) {
+        self.locations = [[ParseCommunication parseCommunication] origins];
+    } else {
+        self.locations = [[ParseCommunication parseCommunication] destinations];
+    }
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 //    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -90,7 +89,7 @@
     Location *location = [stations objectAtIndex:indexPath.row];
     
     cell.textLabel.text = location.station;
-    cell.detailTextLabel.text = location.city;
+    cell.detailTextLabel.text = location.city.name;
     
     
     return cell;

@@ -44,7 +44,6 @@
     [defaultACL setPublicWriteAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
-
 //     Init Parse Communication Singleton
     [ParseCommunication parseCommunication];
     
