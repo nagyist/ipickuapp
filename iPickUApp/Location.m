@@ -12,7 +12,10 @@
 @implementation Location
 
 @dynamic city;
+@dynamic cityObject;
 @dynamic station;
+@dynamic isDestination;
+@dynamic isOrigin;
 
 + (NSString *)parseClassName {
     return @"Location";

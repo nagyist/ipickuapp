@@ -13,7 +13,7 @@
 @interface LocationViewController ()
 
 @property (weak, nonatomic) NSArray *cities;
-@property (weak, nonatomic) NSMutableDictionary *origins;
+@property (weak, nonatomic) NSMutableDictionary *locations;
 
 @end
 
@@ -33,34 +33,16 @@
 - (id)initWithCoder:(NSCoder *)aCoder {
     self = [super initWithCoder:aCoder];
     if (self) {
-//        [self initParseClass];
         self.cities = [[ParseCommunication parseCommunication] cities];
-        self.origins = [[ParseCommunication parseCommunication] origins];
+        if (self.isOrigin) {
+            self.locations = [[ParseCommunication parseCommunication] origins];
+        } else {
+            self.locations = [[ParseCommunication parseCommunication] destinations];
+        }
+        
     }
     return self;
 }
-
-//- (void)initParseClass {
-//    // Customize the table
-//    
-//    // The className to query on
-//    self.parseClassName = @"Origin";
-//    
-//    // The key of the PFObject to display in the label of the default cell style
-//    self.textKey = @"description";
-//    
-//    // Uncomment the following line to specify the key of a PFFile on the PFObject to display in the imageView of the default cell style
-//    // self.imageKey = @"image";
-//    
-//    // Whether the built-in pull-to-refresh is enabled
-//    self.pullToRefreshEnabled = YES;
-//    
-//    // Whether the built-in pagination is enabled
-//    self.paginationEnabled = NO;
-//    
-//    // The number of objects to show per page
-//    //        self.objectsPerPage = 25;
-//}
 
 - (void)viewDidLoad
 {
@@ -89,7 +71,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     City *city = [self.cities objectAtIndex:section];
-    NSArray *stations = [self.origins objectForKey:city.name];
+    NSArray *stations = [self.locations objectForKey:city.name];
     return [stations count];
 }
 
@@ -104,7 +86,7 @@
     }
     
     City *city = [self.cities objectAtIndex:indexPath.section];
-    NSArray *stations = [self.origins objectForKey:city.name];
+    NSArray *stations = [self.locations objectForKey:city.name];
     Location *location = [stations objectAtIndex:indexPath.row];
     
     cell.textLabel.text = location.station;

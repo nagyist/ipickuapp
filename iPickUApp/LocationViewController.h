@@ -15,4 +15,6 @@
 
 @property (weak, nonatomic) id<LocationProtocol> delegate;
 
+@property BOOL isOrigin;
+
 @end

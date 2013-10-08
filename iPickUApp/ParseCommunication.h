@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSArray *cities;
 @property (strong, nonatomic) NSMutableDictionary *origins;
+@property (strong, nonatomic) NSMutableDictionary *destinations;
 
 + (id)parseCommunication;
 

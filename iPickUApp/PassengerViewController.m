@@ -102,10 +102,12 @@
         self.isPickUp = YES;
         LocationViewController *destination = [segue destinationViewController];
         [destination setDelegate:self];
+        destination.isOrigin = YES;
     } else if ([segueIdentifier isEqualToString:DROPOFF_LOCATION_SEGUE]) {
         self.isPickUp = NO;
         LocationViewController *destination = [segue destinationViewController];
         [destination setDelegate:self];
+        destination.isOrigin = NO;
     } else if ([segueIdentifier isEqualToString:SUBMIT_REQUEST_SEGUE]) {
         [self setSegueDestinationInfo:segue.destinationViewController];
     }

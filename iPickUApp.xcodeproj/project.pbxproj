@@ -14,6 +14,12 @@
 		DD04113E17EADDEB00B27456 /* button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113D17EADDEB00B27456 /* button_background.png */; };
 		DD04114117EC299600B27456 /* submit_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04113F17EC299600B27456 /* submit_button.png */; };
 		DD04114217EC299600B27456 /* clear_button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD04114017EC299600B27456 /* clear_button.png */; };
+		DD6225C4180289BF003C07BA /* carpool_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6225C3180289BF003C07BA /* carpool_80x80.png */; };
+		DD6225C6180289C8003C07BA /* carpool_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6225C5180289C8003C07BA /* carpool_58x58.png */; };
+		DD6225C8180289CE003C07BA /* carpool_29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6225C7180289CE003C07BA /* carpool_29x29.png */; };
+		DD6225CA180289D6003C07BA /* carpool_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6225C9180289D6003C07BA /* carpool_120x120.png */; };
+		DD6225CC180289DC003C07BA /* carpool_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6225CB180289DC003C07BA /* carpool_57x57.png */; };
+		DD6225CE180289E1003C07BA /* carpool_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = DD6225CD180289E1003C07BA /* carpool_114x114.png */; };
 		DD8B61151793CC79009591D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61141793CC79009591D6 /* UIKit.framework */; };
 		DD8B61171793CC79009591D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61161793CC79009591D6 /* Foundation.framework */; };
 		DD8B61191793CC79009591D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B61181793CC79009591D6 /* CoreGraphics.framework */; };
@@ -41,6 +47,7 @@
 		DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615617952CEC009591D6 /* DriverViewController.m */; };
 		DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* LocationViewController.m */; };
 		DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615E17961050009591D6 /* PassengerTripViewController.m */; };
+		DD998A301803A3F500C61503 /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = DD998A2F1803A3F500C61503 /* bug.png */; };
 		DDF22C8B179A611100FF376C /* DriverTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF22C8A179A611100FF376C /* DriverTripViewController.m */; };
 		DDFB171817EEAB3900982E00 /* ParseCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171717EEAB3900982E00 /* ParseCommunication.m */; };
 		DDFB171F17F00C0900982E00 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171E17F00C0900982E00 /* City.m */; };
@@ -56,6 +63,12 @@
 		DD04113D17EADDEB00B27456 /* button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_background.png; sourceTree = "<group>"; };
 		DD04113F17EC299600B27456 /* submit_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit_button.png; sourceTree = "<group>"; };
 		DD04114017EC299600B27456 /* clear_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear_button.png; sourceTree = "<group>"; };
+		DD6225C3180289BF003C07BA /* carpool_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpool_80x80.png; sourceTree = "<group>"; };
+		DD6225C5180289C8003C07BA /* carpool_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpool_58x58.png; sourceTree = "<group>"; };
+		DD6225C7180289CE003C07BA /* carpool_29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpool_29x29.png; sourceTree = "<group>"; };
+		DD6225C9180289D6003C07BA /* carpool_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpool_120x120.png; sourceTree = "<group>"; };
+		DD6225CB180289DC003C07BA /* carpool_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpool_57x57.png; sourceTree = "<group>"; };
+		DD6225CD180289E1003C07BA /* carpool_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carpool_114x114.png; sourceTree = "<group>"; };
 		DD8B61111793CC79009591D6 /* iPickUApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPickUApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8B61141793CC79009591D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD8B61161793CC79009591D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +108,7 @@
 		DD8B615C1795CC0B009591D6 /* LocationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationProtocol.h; sourceTree = "<group>"; };
 		DD8B615D1796104F009591D6 /* PassengerTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerTripViewController.h; sourceTree = "<group>"; };
 		DD8B615E17961050009591D6 /* PassengerTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTripViewController.m; sourceTree = "<group>"; };
+		DD998A2F1803A3F500C61503 /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bug.png; sourceTree = "<group>"; };
 		DDF22C89179A611100FF376C /* DriverTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverTripViewController.h; sourceTree = "<group>"; };
 		DDF22C8A179A611100FF376C /* DriverTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTripViewController.m; sourceTree = "<group>"; };
 		DDF22C8C179CE73D00FF376C /* TripProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripProtocol.h; sourceTree = "<group>"; };
@@ -136,6 +150,8 @@
 		DD04112C17EAD1C200B27456 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DD6225C2180289B6003C07BA /* icons */,
+				DD998A2F1803A3F500C61503 /* bug.png */,
 				DD04113F17EC299600B27456 /* submit_button.png */,
 				DD04114017EC299600B27456 /* clear_button.png */,
 				DD04113D17EADDEB00B27456 /* button_background.png */,
@@ -145,6 +161,19 @@
 				DD04112E17EAD1C200B27456 /* passenger.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		DD6225C2180289B6003C07BA /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				DD6225CD180289E1003C07BA /* carpool_114x114.png */,
+				DD6225CB180289DC003C07BA /* carpool_57x57.png */,
+				DD6225C9180289D6003C07BA /* carpool_120x120.png */,
+				DD6225C7180289CE003C07BA /* carpool_29x29.png */,
+				DD6225C5180289C8003C07BA /* carpool_58x58.png */,
+				DD6225C3180289BF003C07BA /* carpool_80x80.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 		DD8B61081793CC79009591D6 = {
@@ -313,17 +342,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8B611F1793CC79009591D6 /* InfoPlist.strings in Resources */,
+				DD6225C6180289C8003C07BA /* carpool_58x58.png in Resources */,
 				DD8B61271793CC79009591D6 /* Default.png in Resources */,
+				DD6225CC180289DC003C07BA /* carpool_57x57.png in Resources */,
+				DD6225CA180289D6003C07BA /* carpool_120x120.png in Resources */,
 				DD8B61291793CC79009591D6 /* Default@2x.png in Resources */,
 				DD8B612B1793CC79009591D6 /* Default-568h@2x.png in Resources */,
 				DD8B612E1793CC79009591D6 /* MainStoryboard.storyboard in Resources */,
 				DD04112F17EAD1C200B27456 /* car.png in Resources */,
+				DD6225CE180289E1003C07BA /* carpool_114x114.png in Resources */,
 				DD04113017EAD1C200B27456 /* passenger.png in Resources */,
 				DD04113817EAD92A00B27456 /* pin_dropoff.png in Resources */,
 				DD04113C17EADBD800B27456 /* pin_pickup.png in Resources */,
+				DD998A301803A3F500C61503 /* bug.png in Resources */,
 				DD04113E17EADDEB00B27456 /* button_background.png in Resources */,
+				DD6225C4180289BF003C07BA /* carpool_80x80.png in Resources */,
 				DD04114117EC299600B27456 /* submit_button.png in Resources */,
 				DD04114217EC299600B27456 /* clear_button.png in Resources */,
+				DD6225C8180289CE003C07BA /* carpool_29x29.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +468,7 @@
 		DD8B61351793CC79009591D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -447,6 +484,7 @@
 		DD8B61361793CC79009591D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
