@@ -11,6 +11,8 @@
 // Parse Framework
 #import <Parse/Parse.h>
 
+// TestFLight
+#import "TestFlight.h"
 
 // Parse subclasses
 #import "Passenger.h"
@@ -46,6 +48,10 @@
     
 //     Init Parse Communication Singleton
     [ParseCommunication parseCommunication];
+    
+    // start of your application:didFinishLaunchingWithOptions
+    [TestFlight takeOff:@"50e58285-e072-41cc-b10f-0fa4d4a4e7f2"];
+    // The rest of your application:didFinishLaunchingWithOptions method
     
     return YES;
 }

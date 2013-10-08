@@ -48,6 +48,9 @@
 		DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* LocationViewController.m */; };
 		DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615E17961050009591D6 /* PassengerTripViewController.m */; };
 		DD998A301803A3F500C61503 /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = DD998A2F1803A3F500C61503 /* bug.png */; };
+		DD998A3B1803E00300C61503 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD998A351803E00300C61503 /* libTestFlight.a */; };
+		DD998A3C1803E00300C61503 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD998A361803E00300C61503 /* README.md */; };
+		DD998A3D1803E00300C61503 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = DD998A371803E00300C61503 /* release_notes.md */; };
 		DDF22C8B179A611100FF376C /* DriverTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF22C8A179A611100FF376C /* DriverTripViewController.m */; };
 		DDFB171817EEAB3900982E00 /* ParseCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171717EEAB3900982E00 /* ParseCommunication.m */; };
 		DDFB171F17F00C0900982E00 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171E17F00C0900982E00 /* City.m */; };
@@ -109,6 +112,12 @@
 		DD8B615D1796104F009591D6 /* PassengerTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerTripViewController.h; sourceTree = "<group>"; };
 		DD8B615E17961050009591D6 /* PassengerTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTripViewController.m; sourceTree = "<group>"; };
 		DD998A2F1803A3F500C61503 /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bug.png; sourceTree = "<group>"; };
+		DD998A351803E00300C61503 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		DD998A361803E00300C61503 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DD998A371803E00300C61503 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		DD998A381803E00300C61503 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		DD998A391803E00300C61503 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		DD998A3A1803E00300C61503 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		DDF22C89179A611100FF376C /* DriverTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverTripViewController.h; sourceTree = "<group>"; };
 		DDF22C8A179A611100FF376C /* DriverTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTripViewController.m; sourceTree = "<group>"; };
 		DDF22C8C179CE73D00FF376C /* TripProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripProtocol.h; sourceTree = "<group>"; };
@@ -129,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8B614A1793CDAB009591D6 /* SystemConfiguration.framework in Frameworks */,
+				DD998A3B1803E00300C61503 /* libTestFlight.a in Frameworks */,
 				DD8B61481793CDA4009591D6 /* StoreKit.framework in Frameworks */,
 				DD8B61461793CD9E009591D6 /* Security.framework in Frameworks */,
 				DD8B61441793CD97009591D6 /* QuartzCore.framework in Frameworks */,
@@ -196,6 +206,7 @@
 		DD8B61131793CC79009591D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD998A341803E00300C61503 /* TestFlightSDK2.0.2 */,
 				DD8B61491793CDAB009591D6 /* SystemConfiguration.framework */,
 				DD8B61471793CDA4009591D6 /* StoreKit.framework */,
 				DD8B61451793CD9E009591D6 /* Security.framework */,
@@ -271,6 +282,19 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		DD998A341803E00300C61503 /* TestFlightSDK2.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				DD998A351803E00300C61503 /* libTestFlight.a */,
+				DD998A361803E00300C61503 /* README.md */,
+				DD998A371803E00300C61503 /* release_notes.md */,
+				DD998A381803E00300C61503 /* TestFlight+AsyncLogging.h */,
+				DD998A391803E00300C61503 /* TestFlight+ManualSessions.h */,
+				DD998A3A1803E00300C61503 /* TestFlight.h */,
+			);
+			path = TestFlightSDK2.0.2;
+			sourceTree = "<group>";
+		};
 		DDFB171517EEAAE500982E00 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +367,7 @@
 			files = (
 				DD8B611F1793CC79009591D6 /* InfoPlist.strings in Resources */,
 				DD6225C6180289C8003C07BA /* carpool_58x58.png in Resources */,
+				DD998A3C1803E00300C61503 /* README.md in Resources */,
 				DD8B61271793CC79009591D6 /* Default.png in Resources */,
 				DD6225CC180289DC003C07BA /* carpool_57x57.png in Resources */,
 				DD6225CA180289D6003C07BA /* carpool_120x120.png in Resources */,
@@ -358,6 +383,7 @@
 				DD04113E17EADDEB00B27456 /* button_background.png in Resources */,
 				DD6225C4180289BF003C07BA /* carpool_80x80.png in Resources */,
 				DD04114117EC299600B27456 /* submit_button.png in Resources */,
+				DD998A3D1803E00300C61503 /* release_notes.md in Resources */,
 				DD04114217EC299600B27456 /* clear_button.png in Resources */,
 				DD6225C8180289CE003C07BA /* carpool_29x29.png in Resources */,
 			);
@@ -476,6 +502,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPickUApp/iPickUApp-Prefix.pch";
 				INFOPLIST_FILE = "iPickUApp/iPickUApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/keldon/Developer/ipickuapp/TestFlightSDK2.0.2,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -492,6 +522,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPickUApp/iPickUApp-Prefix.pch";
 				INFOPLIST_FILE = "iPickUApp/iPickUApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/keldon/Developer/ipickuapp/TestFlightSDK2.0.2,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
