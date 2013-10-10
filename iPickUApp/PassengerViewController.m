@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -68,6 +69,8 @@
 - (void)validateUI {
     if ([self isReadyToSubmit]) {
         [self.submitButton setEnabled:YES];
+    } else {
+        [self.submitButton setEnabled:NO];
     }
 }
 

@@ -33,6 +33,7 @@
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
     [self fetchDrivers];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
 
 }
 

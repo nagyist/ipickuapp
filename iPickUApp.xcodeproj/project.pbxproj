@@ -47,10 +47,12 @@
 		DD8B615717952CEC009591D6 /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615617952CEC009591D6 /* DriverViewController.m */; };
 		DD8B615A1795CBA6009591D6 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B61591795CBA6009591D6 /* LocationViewController.m */; };
 		DD8B615F17961050009591D6 /* PassengerTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B615E17961050009591D6 /* PassengerTripViewController.m */; };
+		DD9344DA180695AB007BE683 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9344D9180695AB007BE683 /* button.png */; };
 		DD998A301803A3F500C61503 /* bug.png in Resources */ = {isa = PBXBuildFile; fileRef = DD998A2F1803A3F500C61503 /* bug.png */; };
 		DD998A3B1803E00300C61503 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD998A351803E00300C61503 /* libTestFlight.a */; };
 		DD998A3C1803E00300C61503 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD998A361803E00300C61503 /* README.md */; };
 		DD998A3D1803E00300C61503 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = DD998A371803E00300C61503 /* release_notes.md */; };
+		DDBCC64D18069176007B7ABD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBCC64C18069175007B7ABD /* background.png */; };
 		DDF22C8B179A611100FF376C /* DriverTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF22C8A179A611100FF376C /* DriverTripViewController.m */; };
 		DDFB171817EEAB3900982E00 /* ParseCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171717EEAB3900982E00 /* ParseCommunication.m */; };
 		DDFB171F17F00C0900982E00 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFB171E17F00C0900982E00 /* City.m */; };
@@ -111,6 +113,7 @@
 		DD8B615C1795CC0B009591D6 /* LocationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationProtocol.h; sourceTree = "<group>"; };
 		DD8B615D1796104F009591D6 /* PassengerTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerTripViewController.h; sourceTree = "<group>"; };
 		DD8B615E17961050009591D6 /* PassengerTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTripViewController.m; sourceTree = "<group>"; };
+		DD9344D9180695AB007BE683 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		DD998A2F1803A3F500C61503 /* bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bug.png; sourceTree = "<group>"; };
 		DD998A351803E00300C61503 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		DD998A361803E00300C61503 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		DD998A381803E00300C61503 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		DD998A391803E00300C61503 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		DD998A3A1803E00300C61503 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		DDBCC64C18069175007B7ABD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		DDF22C89179A611100FF376C /* DriverTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverTripViewController.h; sourceTree = "<group>"; };
 		DDF22C8A179A611100FF376C /* DriverTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverTripViewController.m; sourceTree = "<group>"; };
 		DDF22C8C179CE73D00FF376C /* TripProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripProtocol.h; sourceTree = "<group>"; };
@@ -160,7 +164,9 @@
 		DD04112C17EAD1C200B27456 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DD9344D9180695AB007BE683 /* button.png */,
 				DD6225C2180289B6003C07BA /* icons */,
+				DDBCC64C18069175007B7ABD /* background.png */,
 				DD998A2F1803A3F500C61503 /* bug.png */,
 				DD04113F17EC299600B27456 /* submit_button.png */,
 				DD04114017EC299600B27456 /* clear_button.png */,
@@ -371,9 +377,11 @@
 				DD8B61271793CC79009591D6 /* Default.png in Resources */,
 				DD6225CC180289DC003C07BA /* carpool_57x57.png in Resources */,
 				DD6225CA180289D6003C07BA /* carpool_120x120.png in Resources */,
+				DD9344DA180695AB007BE683 /* button.png in Resources */,
 				DD8B61291793CC79009591D6 /* Default@2x.png in Resources */,
 				DD8B612B1793CC79009591D6 /* Default-568h@2x.png in Resources */,
 				DD8B612E1793CC79009591D6 /* MainStoryboard.storyboard in Resources */,
+				DDBCC64D18069176007B7ABD /* background.png in Resources */,
 				DD04112F17EAD1C200B27456 /* car.png in Resources */,
 				DD6225CE180289E1003C07BA /* carpool_114x114.png in Resources */,
 				DD04113017EAD1C200B27456 /* passenger.png in Resources */,
