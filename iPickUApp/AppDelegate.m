@@ -50,7 +50,7 @@
     [ParseCommunication parseCommunication];
     
     // start of your application:didFinishLaunchingWithOptions
-    [TestFlight takeOff:@"50e58285-e072-41cc-b10f-0fa4d4a4e7f2"];
+    [TestFlight takeOff:@"6a3e571a-8ef7-4666-889f-cbbccfbfb358"];
     // The rest of your application:didFinishLaunchingWithOptions method
     
     return YES;

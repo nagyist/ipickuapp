@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "LocationProtocol.h"
-
-#import "Driver.h"
-
+#import "Passenger.h"
+#import "Location.h"
 
 #define PICK_UP_LOCATION @"Pick up location"
 #define DROP_OFF_LOCATION @"Drop off location"
@@ -25,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @property (strong, nonatomic) Passenger *passenger;
+
+@property (weak, nonatomic) Location *pickUpLocation;
+@property (weak, nonatomic) Location *dropOffLocation;
 
 @property (nonatomic) BOOL isPickUp;
 

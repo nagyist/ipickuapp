@@ -15,6 +15,8 @@
 @property (weak, nonatomic) NSArray *cities;
 @property (weak, nonatomic) NSMutableDictionary *locations;
 
+@property (weak, nonatomic) Location *locationToAvoid;
+
 @end
 
 @implementation LocationViewController
@@ -47,8 +49,10 @@
  
     if (self.isOrigin) {
         self.locations = [[ParseCommunication parseCommunication] origins];
+        self.locationToAvoid = nil;
     } else {
         self.locations = [[ParseCommunication parseCommunication] destinations];
+        self.locationToAvoid = [self.delegate pickUpLocation];
     }
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
 //    self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -90,6 +94,11 @@
     
     cell.textLabel.text = location.station;
     cell.detailTextLabel.text = location.city.name;
+    
+    if (location && [location.objectId isEqualToString:self.locationToAvoid.objectId]) {
+        cell.userInteractionEnabled = NO;
+        cell.backgroundColor = [UIColor greenColor];
+    }
     
     
     return cell;
@@ -144,9 +153,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    NSString *title = [[cell textLabel] text];
-    [self.delegate setLocation:title];
+//    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    
+    City *city = [self.cities objectAtIndex:indexPath.section];
+    NSArray *stations = [self.locations objectForKey:city.name];
+    Location *selectedLocation = [stations objectAtIndex:indexPath.row];
+    if (self.isOrigin) {
+        [self.delegate setPickUpLocation:selectedLocation];
+    } else {
+        [self.delegate setDropOffLocation:selectedLocation];
+    }
+    
     // set delegate location using title
     [self.navigationController popViewControllerAnimated:YES];
     

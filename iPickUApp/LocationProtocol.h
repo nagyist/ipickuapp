@@ -12,9 +12,14 @@
 #define PICKUP_LOCATION_SEGUE @"PICK_UP_LOCATION"
 #define DROPOFF_LOCATION_SEGUE @"DROP_OFF_LOCATION"
 
+@class Location;
+
 @protocol LocationProtocol <NSObject>
 
-- (void)setLocation:(NSString *)location;
+@required
+
+@property (weak, nonatomic) Location *pickUpLocation;
+@property (weak, nonatomic) Location *dropOffLocation;
 
 @end
 

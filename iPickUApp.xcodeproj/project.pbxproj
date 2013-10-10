@@ -495,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -507,6 +508,7 @@
 					/Users/keldon/Developer/ipickuapp/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1FF9F004-121D-419F-8612-9071ABEC8F7F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -515,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -527,6 +530,7 @@
 					/Users/keldon/Developer/ipickuapp/TestFlightSDK2.0.2,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1FF9F004-121D-419F-8612-9071ABEC8F7F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

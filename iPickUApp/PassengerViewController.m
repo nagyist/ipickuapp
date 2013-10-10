@@ -32,27 +32,37 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self validateUI];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
 
 - (void)clear {
+    self.pickUpLocation = nil;
+    self.dropOffLocation = nil;
     [self.pickUpLocationLabel setText:@"Pick up location"];
     [self.dropOffLocationLabel setText:@"Drop off location"];
     [self.selectDropOffLocationButton setEnabled:NO];
     [self.submitButton setEnabled:NO];
 }
 
-- (void)setLocation:(NSString *)location {
-    if (self.isPickUp) {
-        [self.pickUpLocationLabel setText:location];
-        [self.selectDropOffLocationButton setEnabled:YES];
-    } else {
-        [self.dropOffLocationLabel setText:location];
-        [self validateUI];
-    }
 
+- (void)setPickUpLocation:(Location *)location {
+    _pickUpLocation = location;
+    [self.pickUpLocationLabel setText:location.station];
+    [self.selectDropOffLocationButton setEnabled:YES];
+    
+}
+
+- (void)setDropOffLocation:(Location *)location {
+    _dropOffLocation = location;
+    [self.dropOffLocationLabel setText:location.station];
+    [self validateUI];
 }
 
 - (void)validateUI {
@@ -62,16 +72,18 @@
 }
 
 - (BOOL)isReadyToSubmit {
-    NSString *pickUp = [self.pickUpLocationLabel text];
-    NSString *dropOff = [self.dropOffLocationLabel text];
     
-    if ([pickUp isEqualToString:PICK_UP_LOCATION] || [pickUp isEqualToString:@""]) {
+    if (!self.pickUpLocation) {
         // we can provide feedback to the user
         return NO;
     }
     
-    if ([dropOff isEqualToString:PICK_UP_LOCATION] || [dropOff isEqualToString:@""]) {
+    if (!self.dropOffLocation) {
         // we can provide feedback to the user
+        return NO;
+    }
+    
+    if ([self.dropOffLocation.objectId isEqualToString:self.pickUpLocation.objectId]) {
         return NO;
     }
     
